@@ -15,9 +15,11 @@ clusters = {
     "fry": ("No data", ""),
 }
 
+
 @app.route("/", methods=["GET"])
 def cv_homepage():
     return render_template('index.html')
+
 
 @app.route("/monitoring", methods=["GET", "POST"])
 def monitor_clusters():

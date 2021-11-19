@@ -1,11 +1,32 @@
 <!doctype html>
-<title>Hello from Flask</title>
-<table>
+<html lang="en">
+<head>
+    <title>Julia Haag</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='plugins/bootstrap/css/bootstrap.min.css') }}">
+</head>
+<title>Cluster Monitoring</title>
+<meta http-equiv="refresh" content="60">
+<table class="table table-striped">
+<thead>
+<tr>
+  <th scope="col">Server</th>
+  <th scope="col">Usage</th>
+  <th scope="col">Time</th>
+</tr>
+</thead>
+<tbody>
 {% for cluster, (info, time) in clusters.items() %}
      <tr>
-        <td>{{ cluster }}</td>
-         <td>{{ info }}</td>
-         <td>{{ time }}</td>
+        <th scope="row">{{ cluster }}</th>
+        <td>{{ info }}</td>
+        <td>{{ time }}</td>
     </tr>
  {% endfor %}
+ </tbody>
 </table>
