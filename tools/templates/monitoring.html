@@ -1,0 +1,10 @@
+<!doctype html>
+<title>Hello from Flask</title>
+<table>
+{% for cluster, info in clusters.items() %}
+     <tr>
+        <td>{{ cluster }}</td>
+         <td>{{ info }}</td>
+    </tr>
+ {% endfor %}
+</table>
