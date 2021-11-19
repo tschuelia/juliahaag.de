@@ -1,10 +1,11 @@
 <!doctype html>
 <title>Hello from Flask</title>
 <table>
-{% for cluster, info in clusters.items() %}
+{% for cluster, (info, time) in clusters.items() %}
      <tr>
         <td>{{ cluster }}</td>
          <td>{{ info }}</td>
+         <td>{{ time }}</td>
     </tr>
  {% endfor %}
 </table>
