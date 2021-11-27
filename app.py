@@ -13,6 +13,7 @@ clusters = {
     "deimos": ("No data", ""),
     "amy": ("No data", ""),
     "fry": ("No data", ""),
+    "mlserver": ("No data", ""),
 }
 
 
