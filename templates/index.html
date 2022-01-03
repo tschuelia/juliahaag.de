@@ -25,7 +25,8 @@
 <div class="wrapper mt-lg-5">
     <div class="sidebar-wrapper">
         <div class="profile-container">
-            <img class="profile" src="{{ url_for('static', filename='images/profile_photo.jpg') }}" alt="" width="200" style="border-radius: 50%"/>
+            <img class="profile" src="{{ url_for('static', filename='images/profile_photo.jpg') }}" alt="" width="200"
+                 style="border-radius: 50%"/>
             <h1 class="name">Julia Haag</h1>
             <h3 class="tagline">Computer Science Student</h3>
         </div><!--//profile-container-->
@@ -36,6 +37,7 @@
                 <li class="job-title"><a href="#further-education">Further Education</a></li>
                 <li class="job-title"><a href="#experience">Experience</a></li>
                 <li class="job-title"><a href="#projects">Projects</a></li>
+                <li class="job-title"><a href="#publications">Publications</a></li>
                 <li class="job-title"><a href="#skills">Skills</a></li>
                 <li class="job-title"><a href="#misc">Misc</a></li>
             </ul>
@@ -62,7 +64,8 @@
 
                 <p>My name is Julia and I'm a computer science student located in Karlsruhe, Germany.
                     My main interests lay in data analysis, bioinformatics and medical informatics.
-                    I will soon start my PhD with the <a href="https://cme.h-its.org/exelixis/index.html">CME group</a> at HITS in Heidelberg. 
+                    I will soon start my PhD with the <a href="https://cme.h-its.org/exelixis/index.html">CME group</a>
+                    at HITS in Heidelberg.
                     I love learning new things and new technologies.
                 </p>
                 <p> If you want to chat, feel free to contact me!
@@ -325,201 +328,242 @@
                 <p>This is an incomplete list of my projects.</p>
             </div><!--//intro-->
             <div class="item">
-                <h6 class="container-block-title"><a
-                        href="https://diary.juliaschmid.com"
-                        target="_blank">Diary Website</a></h6>
-                <p>
-                    To remember vacations, holidays and trips I implemented a diary website.
-                    This website also stores images associated with certain trips and image descriptions so I can show
-                    the best images to
-                    friends and family. It also includes a map so I can see where
-                    on this beautiful earth I have already travelled to.
-                </p>
-                <p>The source code is available <a href="https://github.com/tschuelia/diary"
-                                                   target="_blank">here</a>.</p>
-                <span class="badge bg-light text-dark">Python</span>
-                <span class="badge bg-light text-dark">Django</span>
-                <span class="badge bg-light text-dark">HTML</span>
-                <span class="badge bg-light text-dark">CSS</span>
-                <span class="badge bg-light text-dark">Bootstrap</span>
-            </div><!--//item-->
-            <br>
-
-            <div class="item">
-                <h6 class="container-block-title"><a
-                        href="https://master.juliaschmid.com"
-                        target="_blank">Master Courses Organization Tool</a></h6>
-                <p>
-                    For my master’s studies at KIT I implemented a web-based tool to organize the courses I
-                    intend to take. The tool checks if the planned courses satisfy all requirements to get the master’s
-                    degree.
-                </p>
-                <p>The source code is available <a href="https://github.com/tschuelia/master-organization"
-                                                   target="_blank">here</a>.</p>
-                <span class="badge bg-light text-dark">Python</span>
-                <span class="badge bg-light text-dark">Django</span>
-                <span class="badge bg-light text-dark">HTML</span>
-                <span class="badge bg-light text-dark">CSS</span>
-                <span class="badge bg-light text-dark">Bootstrap</span>
-            </div><!--//item-->
-            <br>
-
-            <div class="item">
-                <h6 class="container-block-title"><a
-                        href="https://github.com/tschuelia/Image-Based-Tracking"
-                        target="_blank">Markerless Patient Tracking (Bachelor’s Thesis)</a></h6>
-                <p>
-                    With the Intelligent Process Automation and Robotics Lab (IPR) at KIT, we implemented a system for
-                    markerless patient movement tracking during cochlear implant surgeries. The approach uses only the
-                    images obtained by the microscopic camera used by the surgeon.
-                    I implemented the algorithm using Python 3.6 and the image processing frameworks OpenCV and
-                    scikit-image. It also includes a neural network for semantic image segmentation. The source code is
-                    available <a href="https://github.com/tschuelia/Image-Based-Tracking" target="_blank">on my
-                    GitHub</a>.
-                    The written thesis is available <a
-                        href="https://www.dropbox.com/s/bkc28tao2q94vgu/thesis_Julia_Schmid.pdf?dl=0" target="_blank">on
-                    my Dropbox</a>.
-                </p>
-                <span class="badge bg-light text-dark">Python</span>
-                <span class="badge bg-light text-dark">OpenCV</span>
-                <span class="badge bg-light text-dark">scikit-image</span>
-            </div><!--//item-->
-            <br>
-
-            <div class="item">
-                <h6 class="container-block-title"><a
-                        href="https://rezepte.juliaschmid.com"
-                        target="_blank">Recipe Website</a></h6>
-                <p>This project was inspired by my love for baking. It is meant for storing all the ideas and recipes
-                    of me and my friends. Different users can create new recipes, categorize them or search for a
-                    specific recipe.
-                    The website also includes functionality to filter recipes by ingredients and categories.
-                </p>
-                <p>The source code is available <a href="https://github.com/tschuelia/cake_recipe_website"
-                                                   target="_blank">here</a>.</p>
-                <span class="badge bg-light text-dark">Python</span>
-                <span class="badge bg-light text-dark">Django</span>
-                <span class="badge bg-light text-dark">HTML</span>
-                <span class="badge bg-light text-dark">CSS</span>
-                <span class="badge bg-light text-dark">Bootstrap</span>
-            </div><!--//item-->
-            <br>
-
-            <div class="item">
-                <h6 class="container-block-title"><a
-                        href="https://pp.ipd.kit.edu/lehre/misc/lambda-ide/Wavelength.html"
-                        target="_blank">Lambda Calculus IDE (study project)</a></h6>
-                <p>As part of the undergraduate studies, we implemented a browser-based lambda calculus IDE and
-                    interpreter in a team of six students. We used Java with the Google Web Toolkit, JavaScript and CSS
-                    and wrote about 10 000 lines of code plus 6000 lines of tests.
-                    The project was graded with mark 1.0 (best possible grade).
-                    I mostly implemented the interactive frontend to explore the lambda terms and their reduction steps.
-                    Also I wrote lots of tests for the controller layer (MVC architecture).
-                </p>
-                <p>The source code is available <a href="https://github.com/wavelength-ide/wavelength-ide"
-                                                   target="_blank">here</a>.</p>
-                <span class="badge bg-light text-dark">Java</span>
-                <span class="badge bg-light text-dark">Google Web Toolkit</span>
-                <span class="badge bg-light text-dark">JavaScript</span>
-                <span class="badge bg-light text-dark">CSS</span>
-            </div><!--//item-->
-        </section><!--//section-->
-
-        <section class="skills-section section" id="skills">
-            <h2 class="section-title"><span class="icon-holder"><i class="fas fa-rocket"></i></span>Skills</h2>
-            <h5 class="container-block-title">Programming Languages</h5>
-            <div class="intro">
-                <p>I feel most comfortable working with Python, but I did come in touch with many other programming
-                    languages. Since most hobby projects are websites, I am also very familiar with HTML5 and CSS.
-                    During my work at ArtiMinds I had to code in JavaScript and TypeScript and during my
-                    computer science studies I also coded in Java and C. At the moment I am working on learning C++.
-                </p>
-            </div><!--//intro-->
-            <div class="skillset">
-                <div class="item">
-                    <h3 class="level-title">Python</h3>
-                    <div class="progress level-bar">
-                        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 80%"
-                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div><!--//item-->
-
-                <div class="item">
-                    <h3 class="level-title">HTML5 &amp; CSS</h3>
-                    <div class="progress level-bar">
-                        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 75%"
-                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div><!--//item-->
-
-                <div class="item">
-                    <h3 class="level-title">JavaScript & TypeScript</h3>
-                    <div class="progress level-bar">
-                        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 33%"
-                             aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div><!--//item-->
-
-                <div class="item">
-                    <h3 class="level-title">Java</h3>
-                    <div class="progress level-bar">
-                        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 33%"
-                             aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div><!--//item-->
-
-                <div class="item">
-                    <h3 class="level-title">C</h3>
-                    <div class="progress level-bar">
-                        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 33%"
-                             aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div><!--//item-->
-            </div>
-            <br>
-
-            <h5 class="container-block-title">Frameworks</h5>
-            <p>Here is a list of frameworks I frequently work with and I would say I now my way around.</p>
-            <span class="badge bg-light text-dark">Pandas</span>
-            <span class="badge bg-light text-dark">Plotly</span>
-            <span class="badge bg-light text-dark">Matplotlib</span>
-            <span class="badge bg-light text-dark">Numpy</span>
-            <span class="badge bg-light text-dark">SQLite</span>
-            <span class="badge bg-light text-dark">Django</span>
+            <h6 class="container-block-title">Empirical Numerical Properties of Maximum Likelihood Phylogenetic
+                Inference (Master's Thesis)</h6>
+            <p>
+                Phylogenetic trees represent hypothetical evolutionary relationships between organisms. Approaches for
+                inferring phylogenetic trees include the Maximum Likelihood (ML) method. This method relies on numerical
+                optimization routines that use internal numerical thresholds. We analyze the influence of these
+                thresholds on the likelihood scores and runtimes of tree inferences for the ML inference tools RAxML-NG,
+                IQ-Tree, and FastTree. We analyze 22 empirical datasets and show that we can speed up the tree inference
+                in RAxML-NG and IQ-Tree by changing the default values of two such numerical thresholds. Using 15
+                additional simulated datasets, we show that these changes do not affect the accuracy of the inferred
+                phylogenetic trees. For RAxML-NG, increasing the likelihood thresholds lh_epsilon and spr_lhepsilon to
+                10 and 1000 respectively results in an average speedup of 1.9 ± 0.6. Increasing the likelihood threshold
+                lh_epsilon in IQ-Tree results in an average speedup of 1.3 ± 0.4. In addition to the numerical analysis,
+                we attempt to predict the difficulty of datasets, with the aim of preventing an unnecessarily large
+                number of tree inferences for datasets that are easy to analyze. We present our prediction experiments
+                and discuss why this task proved to be more challenging than anticipated.
+            </p>
+            <p>You can find the full thesis <a href="https://cme.h-its.org/exelixis/pubs/masterJulia.pdf">here</a> and the correspondig plots <a href="https://thesis.juliahaag.de">here</a></p>.
+            <span class="badge bg-light text-dark">Python</span>
             <span class="badge bg-light text-dark">Snakemake</span>
-            <span class="badge bg-light text-dark">Biopython</span>
-            <p></p>
-            <br>
+            <span class="badge bg-light text-dark">Plotly</span>
+            <span class="badge bg-light text-dark">RAxML-NG</span>
+            <span class="badge bg-light text-dark">IQ-Tree</span>
+            <span class="badge bg-light text-dark">FastTree</span>
+    </div><!--//item-->
+    <br>
+    <div class="item">
+        <h6 class="container-block-title"><a
+                href="https://diary.juliaschmid.com"
+                target="_blank">Diary Website</a></h6>
+        <p>
+            To remember vacations, holidays and trips I implemented a diary website.
+            This website also stores images associated with certain trips and image descriptions so I can show
+            the best images to
+            friends and family. It also includes a map so I can see where
+            on this beautiful earth I have already travelled to.
+        </p>
+        <p>The source code is available <a href="https://github.com/tschuelia/diary"
+                                           target="_blank">here</a>.</p>
+        <span class="badge bg-light text-dark">Python</span>
+        <span class="badge bg-light text-dark">Django</span>
+        <span class="badge bg-light text-dark">HTML</span>
+        <span class="badge bg-light text-dark">CSS</span>
+        <span class="badge bg-light text-dark">Bootstrap</span>
+    </div><!--//item-->
+    <br>
 
-            <h5 class="container-block-title">Languages</h5>
-            <br>
-            <ul>
-                <li>German (Native)</li>
-                <li>English (Professional)</li>
-                <li>Spanish (Elementary)</li>
-            </ul>
-        </section><!--//skills-section-->
+    <div class="item">
+        <h6 class="container-block-title"><a
+                href="https://master.juliaschmid.com"
+                target="_blank">Master Courses Organization Tool</a></h6>
+        <p>
+            For my master’s studies at KIT I implemented a web-based tool to organize the courses I
+            intend to take. The tool checks if the planned courses satisfy all requirements to get the master’s
+            degree.
+        </p>
+        <p>The source code is available <a href="https://github.com/tschuelia/master-organization"
+                                           target="_blank">here</a>.</p>
+        <span class="badge bg-light text-dark">Python</span>
+        <span class="badge bg-light text-dark">Django</span>
+        <span class="badge bg-light text-dark">HTML</span>
+        <span class="badge bg-light text-dark">CSS</span>
+        <span class="badge bg-light text-dark">Bootstrap</span>
+    </div><!--//item-->
+    <br>
 
-        <section class="skills-section section" id="misc">
-            <h2 class="section-title"><span class="icon-holder"><i class="fas fa-coffee"></i></span>Miscellaneous</h2>
-            <h5 class="container-block-title">Hobbies</h5>
-            <ul>
-                <li>Baking and cooking! You can see pictures of my baked goods <a
-                        href="https://rezepte.juliaschmid.com/gallery" target="_blank">here</a> ☺︎
-                    <br>
-                    <small style="font-size: 10px;">...yes I will bring cake to the office ☺︎</small>
-                </li>
-                <li>Sports, especially cycling and <a href="https://en.wikipedia.org/wiki/Jugger"
-                                                      target="_blank">Jugger</a>, which is
-                    the most awesome sport ever and something you should definetly read about and try out yourself!
-                </li>
-                <li>Drinking good coffee ☺︎ (I even have a barista certificate!)</li>
-                <li>Meeting friends</li>
-                <li>Reading a good book</li>
-            </ul>
-        </section><!--//misc-section-->
+    <div class="item">
+        <h6 class="container-block-title"><a
+                href="https://github.com/tschuelia/Image-Based-Tracking"
+                target="_blank">Markerless Patient Tracking (Bachelor’s Thesis)</a></h6>
+        <p>
+            With the Intelligent Process Automation and Robotics Lab (IPR) at KIT, we implemented a system for
+            markerless patient movement tracking during cochlear implant surgeries. The approach uses only the
+            images obtained by the microscopic camera used by the surgeon.
+            I implemented the algorithm using Python 3.6 and the image processing frameworks OpenCV and
+            scikit-image. It also includes a neural network for semantic image segmentation. The source code is
+            available <a href="https://github.com/tschuelia/Image-Based-Tracking" target="_blank">on my
+            GitHub</a>.
+            The written thesis is available <a
+                href="https://www.dropbox.com/s/bkc28tao2q94vgu/thesis_Julia_Schmid.pdf?dl=0" target="_blank">on
+            my Dropbox</a>.
+        </p>
+        <span class="badge bg-light text-dark">Python</span>
+        <span class="badge bg-light text-dark">OpenCV</span>
+        <span class="badge bg-light text-dark">scikit-image</span>
+    </div><!--//item-->
+    <br>
 
-    </div><!--//main-body-->
+    <div class="item">
+        <h6 class="container-block-title"><a
+                href="https://rezepte.juliaschmid.com"
+                target="_blank">Recipe Website</a></h6>
+        <p>This project was inspired by my love for baking. It is meant for storing all the ideas and recipes
+            of me and my friends. Different users can create new recipes, categorize them or search for a
+            specific recipe.
+            The website also includes functionality to filter recipes by ingredients and categories.
+        </p>
+        <p>The source code is available <a href="https://github.com/tschuelia/cake_recipe_website"
+                                           target="_blank">here</a>.</p>
+        <span class="badge bg-light text-dark">Python</span>
+        <span class="badge bg-light text-dark">Django</span>
+        <span class="badge bg-light text-dark">HTML</span>
+        <span class="badge bg-light text-dark">CSS</span>
+        <span class="badge bg-light text-dark">Bootstrap</span>
+    </div><!--//item-->
+    <br>
+
+    <div class="item">
+        <h6 class="container-block-title"><a
+                href="https://pp.ipd.kit.edu/lehre/misc/lambda-ide/Wavelength.html"
+                target="_blank">Lambda Calculus IDE (study project)</a></h6>
+        <p>As part of the undergraduate studies, we implemented a browser-based lambda calculus IDE and
+            interpreter in a team of six students. We used Java with the Google Web Toolkit, JavaScript and CSS
+            and wrote about 10 000 lines of code plus 6000 lines of tests.
+            The project was graded with mark 1.0 (best possible grade).
+            I mostly implemented the interactive frontend to explore the lambda terms and their reduction steps.
+            Also I wrote lots of tests for the controller layer (MVC architecture).
+        </p>
+        <p>The source code is available <a href="https://github.com/wavelength-ide/wavelength-ide"
+                                           target="_blank">here</a>.</p>
+        <span class="badge bg-light text-dark">Java</span>
+        <span class="badge bg-light text-dark">Google Web Toolkit</span>
+        <span class="badge bg-light text-dark">JavaScript</span>
+        <span class="badge bg-light text-dark">CSS</span>
+    </div><!--//item-->
+    </section><!--//section-->
+
+    <section class="section publications-section" id="publications">
+        <h2 class="section-title"><span class="icon-holder"><i class="fas fa-archive"></i></span>Publications</h2>
+        <div class="item">
+            <h6 class="container-block-title"><a
+                    href="https://doi.org/10.3389/fsurg.2021.742160"
+                    target="_blank">Continuous Feature-Based Tracking of the Inner Ear for Robot-Assisted
+                Microsurgery</a></h6>
+            <p>
+                Marzi C, Prinzen T, Haag J, Klenzner T and Mathis-Ullrich F (2021) Continuous Feature-Based Tracking of
+                the Inner Ear for Robot-Assisted Microsurgery. Front. Surg. 8:742160. doi: 10.3389/fsurg.2021.742160
+            </p>
+        </div><!--//item-->
+    </section><!--//section-->
+
+    <section class="skills-section section" id="skills">
+        <h2 class="section-title"><span class="icon-holder"><i class="fas fa-rocket"></i></span>Skills</h2>
+        <h5 class="container-block-title">Programming Languages</h5>
+        <div class="intro">
+            <p>I feel most comfortable working with Python, but I did come in touch with many other programming
+                languages. Since most hobby projects are websites, I am also very familiar with HTML5 and CSS.
+                During my work at ArtiMinds I had to code in JavaScript and TypeScript and during my
+                computer science studies I also coded in Java and C. At the moment I am working on learning C++.
+            </p>
+        </div><!--//intro-->
+        <div class="skillset">
+            <div class="item">
+                <h3 class="level-title">Python</h3>
+                <div class="progress level-bar">
+                    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 80%"
+                         aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div><!--//item-->
+
+            <div class="item">
+                <h3 class="level-title">HTML5 &amp; CSS</h3>
+                <div class="progress level-bar">
+                    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 75%"
+                         aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div><!--//item-->
+
+            <div class="item">
+                <h3 class="level-title">JavaScript & TypeScript</h3>
+                <div class="progress level-bar">
+                    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 33%"
+                         aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div><!--//item-->
+
+            <div class="item">
+                <h3 class="level-title">Java</h3>
+                <div class="progress level-bar">
+                    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 33%"
+                         aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div><!--//item-->
+
+            <div class="item">
+                <h3 class="level-title">C</h3>
+                <div class="progress level-bar">
+                    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 33%"
+                         aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div><!--//item-->
+        </div>
+        <br>
+
+        <h5 class="container-block-title">Frameworks</h5>
+        <p>Here is a list of frameworks I frequently work with and I would say I now my way around.</p>
+        <span class="badge bg-light text-dark">Pandas</span>
+        <span class="badge bg-light text-dark">Plotly</span>
+        <span class="badge bg-light text-dark">Matplotlib</span>
+        <span class="badge bg-light text-dark">Numpy</span>
+        <span class="badge bg-light text-dark">SQLite</span>
+        <span class="badge bg-light text-dark">Django</span>
+        <span class="badge bg-light text-dark">Snakemake</span>
+        <span class="badge bg-light text-dark">Biopython</span>
+        <p></p>
+        <br>
+
+        <h5 class="container-block-title">Languages</h5>
+        <br>
+        <ul>
+            <li>German (Native)</li>
+            <li>English (Professional)</li>
+            <li>Spanish (Elementary)</li>
+        </ul>
+    </section><!--//skills-section-->
+
+    <section class="skills-section section" id="misc">
+        <h2 class="section-title"><span class="icon-holder"><i class="fas fa-coffee"></i></span>Miscellaneous</h2>
+        <h5 class="container-block-title">Hobbies</h5>
+        <ul>
+            <li>Baking and cooking! You can see pictures of my baked goods <a
+                    href="https://rezepte.juliaschmid.com/gallery" target="_blank">here</a> ☺︎
+                <br>
+                <small style="font-size: 10px;">...yes I will bring cake to the office ☺︎</small>
+            </li>
+            <li>Sports, especially cycling and <a href="https://en.wikipedia.org/wiki/Jugger"
+                                                  target="_blank">Jugger</a>, which is
+                the most awesome sport ever and something you should definetly read about and try out yourself!
+            </li>
+            <li>Drinking good coffee ☺︎ (I even have a barista certificate!)</li>
+            <li>Meeting friends</li>
+            <li>Reading a good book</li>
+        </ul>
+    </section><!--//misc-section-->
+
+</div><!--//main-body-->
 </div>
 
 <footer class="footer">
