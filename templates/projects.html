@@ -1,0 +1,294 @@
+<section class="section projects-section" id="projects">
+    <h2 class="section-title"><span class="icon-holder"><i class="fas fa-archive"></i></span>Projects</h2>
+    <div class="intro">
+        <p>This is an incomplete list of projects I worked on or that I am still working on.</p>
+    </div><!--//intro-->
+
+    <div class="accordion" id="ProjectsAccordion">
+        <!--  Item      -->
+        <div class="accordion-item" id="PythiaProject">
+            <h6 class="accordion-header" id="ProjectsOne">
+                <button aria-controls="collapseProjectsOne" aria-expanded="true"
+                        class="accordion-button job-title"
+                        data-bs-target="#collapseProjectsOne" data-bs-toggle="collapse" type="button">
+                    Pythia – predicting the difficulty of phylogenetic analyses.
+                </button>
+            </h6>
+            <div aria-labelledby="ProjectsOne" class="accordion-collapse collapse show"
+                 data-bs-parent="#ProjectsAccordion"
+                 id="collapseProjectsOne">
+                <div class="accordion-body">
+                    <p>
+                        Phylogenetic analyses under the Maximum Likelihood model are time and resource intensive.
+                        To adequately capture the vastness of tree space, one needs to infer multiple independent trees.
+                        On some datasets, multiple tree inferences converge to similar tree topologies, on others to
+                        multiple,
+                        topologically highly distinct yet statistically indistinguishable topologies.
+                        At present, no method exists to quantify and predict this behavior.
+                        We introduce a method to quantify the degree of difficulty for analyzing a dataset and present
+                        Pythia, a Random Forest Regressor that accurately predicts this difficulty. Pythia predicts the
+                        degree of
+                        difficulty of analyzing a dataset prior to initiating Maximum Likelihood based tree inferences.
+                        Pythia can be used to increase user awareness with respect to the amount of signal and
+                        uncertainty to be
+                        expected in phylogenetic analyses, and hence inform an appropriate (post-)analysis setup.
+                        Further, it can be used to select appropriate search algorithms for easy-, intermediate-,
+                        and hard-to-analyze datasets.
+                    </p>
+                    <p>In the current version of Pythia we replaced the Random Forest Regressor with boosted trees
+                        implemented in
+                        LightGBM.</p>
+                    <p>Pythia is available as open source software libraries in C and Python.</p>
+                    <p>
+                        PyPythia is a light-weight stand-alone Python library that includes an easy-to-use command line
+                        interface.
+                        PyPythia is available on <a href="https://github.com/tschuelia/PyPythia">GitHub</a>.
+                    </p>
+                    <p>
+                        CPythia is also available on <a href="https://github.com/tschuelia/CPythia">GitHub</a>.
+                        CPythia can only be used in conjunction with <a
+                            href="https://codeberg.org/Exelixis-Lab/coraxlib">Coraxlib</a>.
+                    </p>
+                    <p>The respective publication is available as <a
+                            href="https://doi.org/10.1101/2022.06.20.496790"
+                            target="_blank">preprint</a>.</p>
+                    <span class="badge bg-light text-dark">Python</span>
+                    <span class="badge bg-light text-dark">Pandas</span>
+                    <span class="badge bg-light text-dark">Scikit-Learn</span>
+                    <span class="badge bg-light text-dark">LightGBM</span>
+                    <span class="badge bg-light text-dark">TreeLite</span>
+                    <span class="badge bg-light text-dark">Snakemake</span>
+                    <span class="badge bg-light text-dark">RAxML-NG</span>
+                </div>
+            </div>
+        </div>
+        <!-- //Item      -->
+
+        <!--  Item      -->
+        <div class="accordion-item" id="NumericalAnalysis">
+            <div class="accordion-header" id="ProjectsSeven">
+                <button aria-controls="collapseProjectsSeven" aria-expanded="false"
+                        class="accordion-button collapsed job-title"
+                        data-bs-target="#collapseProjectsSeven" data-bs-toggle="collapse" type="button">
+                    Empirical Numerical Properties of Maximum Likelihood Phylogenetic
+                    Inference (Master's Thesis)
+                </button>
+            </div>
+            <div aria-labelledby="ProjectsSeven" class="accordion-collapse collapse"
+                 data-bs-parent="#ProjectsAccordion"
+                 id="collapseProjectsSeven">
+                <div class="accordion-body">
+                    <p>
+                        Phylogenetic trees represent hypothetical evolutionary relationships between organisms.
+                        Approaches for
+                        inferring phylogenetic trees include the Maximum Likelihood (ML) method. This method relies on
+                        numerical
+                        optimization routines that use internal numerical thresholds. We analyze the influence of these
+                        thresholds on the likelihood scores and runtimes of tree inferences for the ML inference tools
+                        RAxML-NG,
+                        IQ-Tree, and FastTree. We analyze 22 empirical datasets and show that we can speed up the tree
+                        inference
+                        in RAxML-NG and IQ-Tree by changing the default values of two such numerical thresholds. Using
+                        15
+                        additional simulated datasets, we show that these changes do not affect the accuracy of the
+                        inferred
+                        phylogenetic trees. For RAxML-NG, increasing the likelihood thresholds lh_epsilon and
+                        spr_lhepsilon to
+                        10 and 1000 respectively results in an average speedup of 1.9 ± 0.6. Increasing the likelihood
+                        threshold
+                        lh_epsilon in IQ-Tree results in an average speedup of 1.3 ± 0.4. In addition to the numerical
+                        analysis,
+                        we attempt to predict the difficulty of datasets, with the aim of preventing an unnecessarily
+                        large
+                        number of tree inferences for datasets that are easy to analyze. We present our prediction
+                        experiments
+                        and discuss why this task proved to be more challenging than anticipated.
+                    </p>
+                    <p>You can find the full thesis <a
+                            href="https://cme.h-its.org/exelixis/pubs/masterJulia.pdf">here</a> and the corresponding
+                        plots <a href="https://thesis.juliahaag.de">here</a></p>.
+                    <p>We also published these findings and findings of subsequent additional analyses I did during my
+                        PhD. It is currently available as <a
+                                href="https://doi.org/10.1101/2022.07.13.499893"
+                                target="_blank">preprint</a>.</p>
+                    <span class="badge bg-light text-dark">Python</span>
+                    <span class="badge bg-light text-dark">Snakemake</span>
+                    <span class="badge bg-light text-dark">Plotly</span>
+                    <span class="badge bg-light text-dark">RAxML-NG</span>
+                    <span class="badge bg-light text-dark">IQ-Tree</span>
+                    <span class="badge bg-light text-dark">FastTree</span>
+                </div>
+            </div>
+        </div>
+        <!-- //Item      -->
+
+        <!--  Item      -->
+        <div class="accordion-item">
+            <div class="accordion-header" id="ProjectsTwo">
+                <button aria-controls="collapseProjectsTwo" aria-expanded="false"
+                        class="accordion-button collapsed job-title"
+                        data-bs-target="#collapseProjectsTwo" data-bs-toggle="collapse" type="button">
+                    Diary Website
+                </button>
+            </div>
+            <div aria-labelledby="ProjectsTwo" class="accordion-collapse collapse"
+                 data-bs-parent="#ProjectsAccordion"
+                 id="collapseProjectsTwo">
+                <div class="accordion-body">
+                    <p>
+                        To remember vacations, holidays and trips I implemented a diary website.
+                        This website also stores images associated with certain trips and image descriptions so I can
+                        show
+                        the best images to
+                        friends and family. It also includes a map so I can see where
+                        on this beautiful earth I have already travelled to.
+                    </p>
+                    <p>The source code is available <a href="https://github.com/tschuelia/diary"
+                                                       target="_blank">here</a>.</p>
+                    <span class="badge bg-light text-dark">Python</span>
+                    <span class="badge bg-light text-dark">Django</span>
+                    <span class="badge bg-light text-dark">HTML</span>
+                    <span class="badge bg-light text-dark">CSS</span>
+                    <span class="badge bg-light text-dark">Bootstrap</span>
+                </div>
+            </div>
+        </div>
+        <!-- //Item      -->
+
+        <!--  Item      -->
+        <div class="accordion-item">
+            <div class="accordion-header" id="ProjectsThree">
+                <button aria-controls="collapseProjectsThree" aria-expanded="false"
+                        class="accordion-button collapsed job-title"
+                        data-bs-target="#collapseProjectsThree" data-bs-toggle="collapse" type="button">
+                    Master Courses Organization Tool
+                </button>
+            </div>
+            <div aria-labelledby="ProjectsThree" class="accordion-collapse collapse"
+                 data-bs-parent="#ProjectsAccordion"
+                 id="collapseProjectsThree">
+                <div class="accordion-body">
+                    <p>
+                        For my master’s studies at KIT I implemented a web-based tool to organize the courses I
+                        intend to take. The tool checks if the planned courses satisfy all requirements to get the
+                        master’s
+                        degree.
+                    </p>
+                    <p>The source code is available <a href="https://github.com/tschuelia/master-organization"
+                                                       target="_blank">here</a>.</p>
+                    <span class="badge bg-light text-dark">Python</span>
+                    <span class="badge bg-light text-dark">Django</span>
+                    <span class="badge bg-light text-dark">HTML</span>
+                    <span class="badge bg-light text-dark">CSS</span>
+                    <span class="badge bg-light text-dark">Bootstrap</span>
+                </div>
+            </div>
+        </div>
+        <!-- //Item      -->
+
+        <!--  Item      -->
+        <div class="accordion-item">
+            <div class="accordion-header" id="ProjectsFour">
+                <button aria-controls="collapseProjectsFour" aria-expanded="false"
+                        class="accordion-button collapsed job-title"
+                        data-bs-target="#collapseProjectsFour" data-bs-toggle="collapse" type="button">
+                    Markerless Patient Tracking (Bachelor’s Thesis)
+                </button>
+            </div>
+            <div aria-labelledby="ProjectsFour" class="accordion-collapse collapse"
+                 data-bs-parent="#ProjectsAccordion"
+                 id="collapseProjectsFour">
+                <div class="accordion-body">
+                    <p>
+                        With the Intelligent Process Automation and Robotics Lab (IPR) at KIT, we implemented a system
+                        for
+                        markerless patient movement tracking during cochlear implant surgeries. The approach uses only
+                        the
+                        images obtained by the microscopic camera used by the surgeon.
+                        I implemented the algorithm using Python 3.6 and the image processing frameworks OpenCV and
+                        scikit-image. It also includes a neural network for semantic image segmentation. The source code
+                        is
+                        available <a href="https://github.com/tschuelia/Image-Based-Tracking" target="_blank">on my
+                        GitHub</a>.
+                        The written thesis is available <a
+                            href="https://www.dropbox.com/s/bkc28tao2q94vgu/thesis_Julia_Schmid.pdf?dl=0"
+                            target="_blank">on
+                        my Dropbox</a>.
+                    </p>
+                    <span class="badge bg-light text-dark">Python</span>
+                    <span class="badge bg-light text-dark">OpenCV</span>
+                    <span class="badge bg-light text-dark">scikit-image</span>
+                </div>
+            </div>
+        </div>
+        <!-- //Item      -->
+
+        <!--  Item      -->
+        <div class="accordion-item">
+            <div class="accordion-header" id="ProjectsFive">
+                <button aria-controls="collapseProjectsFive" aria-expanded="false"
+                        class="accordion-button collapsed job-title"
+                        data-bs-target="#collapseProjectsFive" data-bs-toggle="collapse" type="button">
+                    Recipe Website
+                </button>
+            </div>
+            <div aria-labelledby="ProjectsFive" class="accordion-collapse collapse"
+                 data-bs-parent="#ProjectsAccordion"
+                 id="collapseProjectsFive">
+                <div class="accordion-body">
+                    <p>This project was inspired by my love for baking. It is meant for storing all the ideas and
+                        recipes
+                        of me and my friends. Different users can create new recipes, categorize them or search for a
+                        specific recipe.
+                        The website also includes functionality to filter recipes by ingredients and categories.
+                    </p>
+                    <p>This website is an ongoing project and I keep adding new features. The latest feature I added
+                        was a shopping list that is especially useful when planning to bake multiple different
+                        recipes.</p>
+                    <p>The source code is available <a href="https://github.com/tschuelia/cake_recipe_website"
+                                                       target="_blank">here</a>.</p>
+                    <span class="badge bg-light text-dark">Python</span>
+                    <span class="badge bg-light text-dark">Django</span>
+                    <span class="badge bg-light text-dark">HTML</span>
+                    <span class="badge bg-light text-dark">CSS</span>
+                    <span class="badge bg-light text-dark">Bootstrap</span>
+                </div>
+            </div>
+        </div>
+        <!-- //Item      -->
+
+        <!--  Item      -->
+        <div class="accordion-item">
+            <div class="accordion-header" id="ProjectsSix">
+                <button aria-controls="collapseProjectsSix" aria-expanded="false"
+                        class="accordion-button collapsed job-title"
+                        data-bs-target="#collapseProjectsSix" data-bs-toggle="collapse" type="button">
+                    Lambda Calculus IDE (study project)
+                </button>
+            </div>
+            <div aria-labelledby="ProjectsSix" class="accordion-collapse collapse"
+                 data-bs-parent="#ProjectsAccordion"
+                 id="collapseProjectsSix">
+                <div class="accordion-body">
+                    <p>As part of the undergraduate studies, we implemented a browser-based lambda calculus IDE and
+                        interpreter in a team of six students. We used Java with the Google Web Toolkit, JavaScript and
+                        CSS
+                        and wrote about 10 000 lines of code plus 6000 lines of tests.
+                        The project was graded with mark 1.0 (best possible grade).
+                        I mostly implemented the interactive frontend to explore the lambda terms and their reduction
+                        steps.
+                        Also, I wrote lots of tests for the controller layer (MVC architecture).
+                    </p>
+                    <p>The source code is available <a href="https://github.com/wavelength-ide/wavelength-ide"
+                                                       target="_blank">here</a>.</p>
+                    <span class="badge bg-light text-dark">Java</span>
+                    <span class="badge bg-light text-dark">Google Web Toolkit</span>
+                    <span class="badge bg-light text-dark">JavaScript</span>
+                    <span class="badge bg-light text-dark">CSS</span>
+                </div>
+            </div>
+        </div>
+        <!-- //Item      -->
+    </div>
+
+</section><!--//section-->
