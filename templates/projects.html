@@ -6,15 +6,54 @@
 
     <div class="accordion" id="ProjectsAccordion">
         <!--  Item      -->
+        <div class="accordion-item" id="PandoraProject">
+            <h6 class="accordion-header" id="ProjectsPandora">
+                <button aria-controls="collapseProjectsPandora" aria-expanded="true"
+                        class="accordion-button job-title"
+                        data-bs-target="#collapseProjectsPandora" data-bs-toggle="collapse" type="button">
+                    Pandora – estimating the uncertainty of Dimensionality Reduction (WIP)
+                </button>
+            </h6>
+            <div aria-labelledby="ProjectsPandora" class="accordion-collapse collapse show"
+                 data-bs-parent="#ProjectsAccordion"
+                 id="collapseProjectsPandora">
+                <div class="accordion-body">
+                    <p>
+                        Dimensionality reduction techniques, for example Principal Components Analysis (PCA) or
+                        Multidimensional scaling (MDS) are frequently used in population genetics and ancient DNA studies.
+                        To the best of my knowledge, there exists no standard in either field to report an estimate
+                        of the uncertainty or instability of such methods. Without such an estimate, the accuracy
+                        of a conclusion based on dimensionality reduction cannot be assessed by the reader of the study.
+                        In my current work, I'm implementing the Python
+                        framework Pandora that is able to provide such an uncertainty for a given (biological) dataset.
+                        Our approach will include multiple uncertainty measurements based on bootstrapping, applying
+                        various algorithms, and implementations of dimensionality reduction.
+                    </p>
+                    <p>
+                        This project is work in progress. Once the first version of Pandora is ready for use I will
+                        add a link to the GitHub repository.
+                    </p>
+                    <span class="badge bg-light text-dark">Python</span>
+                    <span class="badge bg-light text-dark">Eigensoft</span>
+                    <span class="badge bg-light text-dark">Plink</span>
+                    <span class="badge bg-light text-dark">Plotly</span>
+                    <span class="badge bg-light text-dark">Pandas</span>
+                    <span class="badge bg-light text-dark">Scikit-Learn</span>
+                </div>
+            </div>
+        </div>
+        <!-- //Item      -->
+
+        <!--  Item      -->
         <div class="accordion-item" id="PythiaProject">
             <h6 class="accordion-header" id="ProjectsOne">
-                <button aria-controls="collapseProjectsOne" aria-expanded="true"
-                        class="accordion-button job-title"
+                <button aria-controls="collapseProjectsOne" aria-expanded="false"
+                        class="accordion-button collapsed job-title"
                         data-bs-target="#collapseProjectsOne" data-bs-toggle="collapse" type="button">
                     Pythia – predicting the difficulty of phylogenetic analyses.
                 </button>
             </h6>
-            <div aria-labelledby="ProjectsOne" class="accordion-collapse collapse show"
+            <div aria-labelledby="ProjectsOne" class="accordion-collapse collapse"
                  data-bs-parent="#ProjectsAccordion"
                  id="collapseProjectsOne">
                 <div class="accordion-body">
