@@ -20,7 +20,8 @@
                 <div class="accordion-body">
                     <p>
                         Dimensionality reduction techniques, for example Principal Components Analysis (PCA) or
-                        Multidimensional scaling (MDS) are frequently used in population genetics and ancient DNA studies.
+                        Multidimensional scaling (MDS) are frequently used in population genetics and ancient DNA
+                        studies.
                         To the best of my knowledge, there exists no standard in either field to report an estimate
                         of the uncertainty or instability of such methods. Without such an estimate, the accuracy
                         of a conclusion based on dimensionality reduction cannot be assessed by the reader of the study.
@@ -88,9 +89,9 @@
                         CPythia can only be used in conjunction with <a
                             href="https://codeberg.org/Exelixis-Lab/coraxlib">Coraxlib</a>.
                     </p>
-                    <p>The respective publication is available as <a
-                            href="https://doi.org/10.1101/2022.06.20.496790"
-                            target="_blank">preprint</a>.</p>
+                    <p>The respective publication is available <a
+                            href="https://doi.org/10.1093/molbev/msac254"
+                            target="_blank">at MBE</a>.</p>
                     <span class="badge bg-light text-dark">Python</span>
                     <span class="badge bg-light text-dark">Pandas</span>
                     <span class="badge bg-light text-dark">Scikit-Learn</span>
@@ -110,7 +111,7 @@
                         class="accordion-button collapsed job-title"
                         data-bs-target="#collapseProjectsSeven" data-bs-toggle="collapse" type="button">
                     Empirical Numerical Properties of Maximum Likelihood Phylogenetic
-                    Inference (Master's Thesis)
+                    Inference
                 </button>
             </div>
             <div aria-labelledby="ProjectsSeven" class="accordion-collapse collapse"
@@ -118,38 +119,30 @@
                  id="collapseProjectsSeven">
                 <div class="accordion-body">
                     <p>
-                        Phylogenetic trees represent hypothetical evolutionary relationships between organisms.
-                        Approaches for
-                        inferring phylogenetic trees include the Maximum Likelihood (ML) method. This method relies on
-                        numerical
-                        optimization routines that use internal numerical thresholds. We analyze the influence of these
-                        thresholds on the likelihood scores and runtimes of tree inferences for the ML inference tools
-                        RAxML-NG,
-                        IQ-Tree, and FastTree. We analyze 22 empirical datasets and show that we can speed up the tree
-                        inference
-                        in RAxML-NG and IQ-Tree by changing the default values of two such numerical thresholds. Using
-                        15
-                        additional simulated datasets, we show that these changes do not affect the accuracy of the
-                        inferred
-                        phylogenetic trees. For RAxML-NG, increasing the likelihood thresholds lh_epsilon and
-                        spr_lhepsilon to
-                        10 and 1000 respectively results in an average speedup of 1.9 ± 0.6. Increasing the likelihood
-                        threshold
-                        lh_epsilon in IQ-Tree results in an average speedup of 1.3 ± 0.4. In addition to the numerical
-                        analysis,
-                        we attempt to predict the difficulty of datasets, with the aim of preventing an unnecessarily
-                        large
-                        number of tree inferences for datasets that are easy to analyze. We present our prediction
-                        experiments
-                        and discuss why this task proved to be more challenging than anticipated.
+                        Maximum Likelihood (ML) is a widely used phylogenetic inference model. ML implementations
+                        heavily rely on numerical optimization routines that use internal numerical thresholds to
+                        determine convergence. We systematically analyze the impact of these threshold settings on the
+                        log-likelihood and runtimes for ML tree inferences with RAxML-NG, IQ-TREE, and FastTree on
+                        empirical datasets. We provide empirical evidence that we can substantially accelerate tree
+                        inferences with RAxML-NG and IQ-TREE by changing the default values of two such numerical
+                        thresholds. At the same time, altering these settings does not significantly impact the quality
+                        of the inferred trees. We further show that increasing both thresholds accelerates the RAxML-NG
+                        bootstrap without influencing the resulting support values. For RAxML-NG, increasing the
+                        likelihood thresholds ϵ<sub>LnL</sub> and ϵ<sub>brlen</sub> to 10 and 103 respectively results
+                        in an average tree
+                        inference speedup of 1.9 ± 0.6 on Data collection 1, 1.8 ± 1.1 on Data collection 2, and 1.9 ±
+                        0.8 on Data collection 2 for the RAxML-NG bootstrap. Increasing the likelihood threshold ϵ<sub>LnL</sub>
+                        to
+                        10 in IQ-TREE results in an average tree inference speedup of 1.3 ± 0.4 on Data collection 1 and
+                        1.3 ± 0.9 on Data collection 2.
                     </p>
-                    <p>You can find the full thesis <a
-                            href="https://cme.h-its.org/exelixis/pubs/masterJulia.pdf">here</a> and the corresponding
-                        plots <a href="https://thesis.juliahaag.de">here</a></p>.
-                    <p>We also published these findings and findings of subsequent additional analyses I did during my
-                        PhD. It is currently available as <a
-                                href="https://doi.org/10.1101/2022.07.13.499893"
-                                target="_blank">preprint</a>.</p>
+                    <p>We summarized our main findings in a publication that is currently available as <a
+                            href="https://www.biorxiv.org/content/10.1101/2022.07.13.499893v2"
+                            target="_blank">preprint</a>.</p>
+                    <p>Our research comprises four studies, I conducted Study 1 during my Master's thesis with the CME
+                        group at HITS.
+                        You can find the full thesis <a
+                                href="https://cme.h-its.org/exelixis/pubs/masterJulia.pdf">here</a></p>.
                     <span class="badge bg-light text-dark">Python</span>
                     <span class="badge bg-light text-dark">Snakemake</span>
                     <span class="badge bg-light text-dark">Plotly</span>
@@ -249,10 +242,8 @@
                         is
                         available <a href="https://github.com/tschuelia/Image-Based-Tracking" target="_blank">on my
                         GitHub</a>.
-                        The written thesis is available <a
-                            href="https://www.dropbox.com/s/bkc28tao2q94vgu/thesis_Julia_Schmid.pdf?dl=0"
-                            target="_blank">on
-                        my Dropbox</a>.
+                        We published the results and further experimental evaluations, the paper is available <a href="https://doi.org/10.3389/fsurg.2021.742160">here</a>.
+                        The thesis is available upon request (contains sensitive patient images).
                     </p>
                     <span class="badge bg-light text-dark">Python</span>
                     <span class="badge bg-light text-dark">OpenCV</span>
