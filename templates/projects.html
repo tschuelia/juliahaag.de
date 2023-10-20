@@ -26,14 +26,18 @@
                         of the uncertainty or instability of such methods. Without such an estimate, the accuracy
                         of a conclusion based on dimensionality reduction cannot be assessed by the reader of the study.
                         In my current work, I'm implementing the Python
-                        framework Pandora that is able to provide such an uncertainty for a given (biological) dataset.
-                        Our approach will include multiple uncertainty measurements based on bootstrapping, applying
-                        various algorithms, and implementations of dimensionality reduction.
+                        framework Pandora that is able to provide such an uncertainty for a given genotype dataset
+                        based on bootstrapping.
+                        Pandora supports stability analyses for PCA and MDS analyses.
+                        In addition to an overall stability of the dataset, Pandora can also compute the stability of 
+                        subsequent K-Means clustering analysis, as well as bootstrap support values for all samples in
+                        the input dataset.
                     </p>
                     <p>
-                        This project is work in progress. Once the first version of Pandora is ready for use I will
-                        add a link to the GitHub repository.
+                        This project is work in progress, but a first version is already available on 
+                        <a href=https://github.com/tschuelia/Pandora target="_blank">GitHub</a>
                     </p>
+                    <p>The preprint publication describing Pandora in detail will be available soon.</p>
                     <span class="badge bg-light text-dark">Python</span>
                     <span class="badge bg-light text-dark">Eigensoft</span>
                     <span class="badge bg-light text-dark">Plink</span>
