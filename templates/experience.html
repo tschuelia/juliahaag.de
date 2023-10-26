@@ -7,7 +7,7 @@
             <h3 class="accordion-header" id="ExperienceZero">
                 <button aria-controls="collapseExperienceZero" aria-expanded="true" class="accordion-button job-title"
                         data-bs-target="#collapseExperienceZero" data-bs-toggle="collapse" type="button">
-                    PhD Project
+                    PhD Computer Science (ongoing)
                 </button>
             </h3>
             <div aria-labelledby="ExperienceZero" class="accordion-collapse collapse show"
@@ -15,7 +15,7 @@
                  id="collapseExperienceZero">
                 <div class="accordion-body">
                     <div class="upper-row">
-                        <div class="time">Mar 2021 – Present</div>
+                        <div class="time">Mar 2022 – Present</div>
                         <div class="company">Heidelberg Institute for Theoretical Studies</div>
                     </div><!--//upper-row-->
                     <p>I am currently pursuing my PhD in Computer Science at the HITS in Heidelberg in the field of
@@ -39,20 +39,21 @@
                     <p>The following list is a brief summary of what I am working on in my day-to-day work and projects
                         that I have finished.</p>
                     <ul>
-                        <li>Phylogenetic Data Simulation: Developing, validating, and comparing phylogenetic tools
-                            requires ground-truth data that is
-                            only available in form of simulated data. In my current research, I am trying to generate
-                            realistic data using deep learning methods (e.g. Variational Autoencoders).
-                            This project is very new, so there is not much to tell yet ☺︎
+                        <li>Pandora: Quantification of the uncertainty of population genetics genotype datasets under
+                            dimensionality reduction.
+                            See <a href="#PandoraProject">below</a>
+                            for more details on this project.
+                        </li>
+                        <li>Debunking Simulations: In a joint work with researchers in France, we demonstrated that
+                            current state-of-the-art models of sequence evolution in phylogenetics cannot simulate
+                            empirical-like data. See <a href="#SimulationsProject">below</a>
+                            for more details on this project.
                         </li>
                         <li>Pythia: Predicting the difficulty of phylogenetic analysis. See <a href="#PythiaProject">below</a>
                             for more details on this project.
                         </li>
                         <li>Numerical Analysis of thresholds in phylogenetic inference tools. See <a
                                 href="#NumericalAnalysis">below</a> for more details on this project.
-                            In addition to my previous work, I am analyzing whether the likelihood epsilon thresholds
-                            can also be increased during the RAxML-NG bootstrapping procedure without compromising the
-                            quality.
                         </li>
                         <li>My group develops a C library providing frequently used phylogenetic inference functionality
                             (<a
@@ -79,6 +80,56 @@
                     <span class="badge bg-light text-dark">RAxML-NG</span>
                     <span class="badge bg-light text-dark">IQ-Tree</span>
                     <span class="badge bg-light text-dark">FastTree</span>
+                </div>
+            </div>
+        </div>
+        <!-- //Item      -->
+
+        <!--  Item      -->
+        <div class="accordion-item">
+            <h3 class="accordion-header" id="Freelance2023">
+                <button aria-controls="collapseFreelance2023" aria-expanded="true" class="accordion-button job-title"
+                        data-bs-target="#collapseFreelance2023" data-bs-toggle="collapse" type="button">
+                    Software Engineer (ongoing)
+                </button>
+            </h3>
+            <div aria-labelledby="Freelance2023" class="accordion-collapse collapse"
+                 data-bs-parent="#ExperienceAccordion"
+                 id="collapseFreelance2023">
+                <div class="accordion-body">
+                    <div class="upper-row">
+                        <div class="time">Oct 2021 – Present</div>
+                        <div class="company">Freelance</div>
+                    </div><!--//upper-row-->
+                    <p>
+                        In addition to pursuing my PhD in computer science, I work as a part-time freelance software
+                        engineer. The idea is to gain further experience in the industrie with frameworks and
+                        technologies I don't use in my research.
+                    </p>
+                    <p>
+                        The primary task involves refactoring a critical, yet undocumented and untested Python 2
+                        codebase to Python 3. The original developers are unavailable, and there's no specification for
+                        the expected functionality. The challenge lies in refactoring without tests to validate changes,
+                        and to write tests, the codebase must first be understood and refactored. The initial structure,
+                        with scattered database interaction logic, didn't allow for testing. Potential logical bugs
+                        present another issue, as it's unclear if they're actual bugs or undocumented, intended
+                        behavior. I made substantial progress in refactoring, adding unit tests and documentation,
+                        reducing technical debt, and enhancing maintainability. I further identified potential bugs,
+                        data inconsistencies, and opportunities for speedup and complexity reduction.
+                    </p>
+                    <p>
+                        In various side-projects for the same company, I came in touch with a few additional
+                        technologies, including FastAPI, GraphQL, docker, docker-compose and Apache Kafka.
+                    </p>
+
+                    <span class="badge bg-light text-dark">Python</span>
+                    <span class="badge bg-light text-dark">MySQL</span>
+                    <span class="badge bg-light text-dark">Redis</span>
+                    <span class="badge bg-light text-dark">FastAPI</span>
+                    <span class="badge bg-light text-dark">GraphQL</span>
+                    <span class="badge bg-light text-dark">Docker</span>
+                    <span class="badge bg-light text-dark">docker-compose</span>
+                    <span class="badge bg-light text-dark">Apache Kafka</span>
                 </div>
             </div>
         </div>
