@@ -6,6 +6,36 @@
 
     <div class="accordion" id="ProjectsAccordion">
         <!--  Item      -->
+        <div class="accordion-item" id="OpenSource">
+            <h6 class="accordion-header" id="ProjectOpenSource">
+                <button aria-controls="collapseProjectOpenSource" aria-expanded="true"
+                        class="accordion-button job-title"
+                        data-bs-target="#collapseProjectOpenSource" data-bs-toggle="collapse" type="button">
+                    Open Source Contributions (ongoing)
+                </button>
+            </h6>
+            <div aria-labelledby="ProjectOpenSource" class="accordion-collapse collapse show"
+                 data-bs-parent="#ProjectsAccordion"
+                 id="collapseProjectOpenSource">
+                <div class="accordion-body">
+                    <p>In my day-to-day work I rely on a lot of open-source software, and I think it's important to
+                        contribute to open-source projects myself.
+                        So far my contributions mainly concern conda-forge recipes. Namely, I contributed the following:
+                    <ul>
+                        <li>addition of the PyPythia feedstock (maintainer)</li>
+                        <li>addition of the apricot-select feedstock (maintainer)</li>
+                        <li>update the pomegranate feedstock (maintainer)</li>
+                        <li>update the scikit-allel feedstock (maintainer)</li>
+                        <li>update the r-curl feedstock</li>
+                    </ul>
+                    Additionally, all my software projects are available open-source on GitHub.
+                    </p>
+                    <span class="badge bg-light text-dark">conda-forge</span>
+                </div>
+            </div>
+        </div>
+        <!-- //Item      -->
+        <!--  Item      -->
         <div class="accordion-item" id="PandoraProject">
             <h6 class="accordion-header" id="ProjectsPandora">
                 <button aria-controls="collapseProjectsPandora" aria-expanded="true"
@@ -29,12 +59,12 @@
                         framework Pandora that is able to provide such an uncertainty for a given genotype dataset
                         based on bootstrapping.
                         Pandora supports stability analyses for PCA and MDS analyses.
-                        In addition to an overall stability of the dataset, Pandora can also compute the stability of 
+                        In addition to an overall stability of the dataset, Pandora can also compute the stability of
                         subsequent K-Means clustering analysis, as well as bootstrap support values for all samples in
                         the input dataset.
                     </p>
                     <p>
-                        This project is work in progress, but a first version is already available on 
+                        This project is work in progress, but a first version is already available on
                         <a href=https://github.com/tschuelia/Pandora target="_blank">GitHub</a>
                     </p>
                     <p>The preprint publication describing Pandora in detail will be available soon.</p>
