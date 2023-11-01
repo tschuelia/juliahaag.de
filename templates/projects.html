@@ -18,6 +18,9 @@
                  data-bs-parent="#ProjectsAccordion"
                  id="collapseProjectOpenSource">
                 <div class="accordion-body">
+                    <p>I contribute and update conda-forge recipes.</p>
+                    <span class="badge bg-light text-dark">conda-forge</span>
+                    <hr>
                     <p>In my day-to-day work I rely on a lot of open-source software, and I think it's important to
                         contribute to open-source projects myself.
                         So far my contributions mainly concern conda-forge recipes. Namely, I contributed the following:
@@ -30,7 +33,6 @@
                     </ul>
                     Additionally, all my software projects are available open-source on GitHub.
                     </p>
-                    <span class="badge bg-light text-dark">conda-forge</span>
                 </div>
             </div>
         </div>
@@ -48,6 +50,19 @@
                  data-bs-parent="#ProjectsAccordion"
                  id="collapseProjectsPandora">
                 <div class="accordion-body">
+                    <p>I implemented a Python tool to estimate the uncertainty of dimensionality reduction on population
+                        genetics
+                        datasets.</p>
+                    <p>The tool is available on <a href=https://github.com/tschuelia/Pandora target="_blank">GitHub</a>
+                        (WIP).</p>
+                    <p>The respective preprint publication will be available soon.</p>
+                    <span class="badge bg-light text-dark">Python</span>
+                    <span class="badge bg-light text-dark">Eigensoft</span>
+                    <span class="badge bg-light text-dark">Plotly</span>
+                    <span class="badge bg-light text-dark">Pandas</span>
+                    <span class="badge bg-light text-dark">Scikit-Learn</span>
+                    <span class="badge bg-light text-dark">GitHub Actions</span>
+                    <hr>
                     <p>
                         Dimensionality reduction techniques, for example Principal Components Analysis (PCA) or
                         Multidimensional scaling (MDS) are frequently used in population genetics and ancient DNA
@@ -63,16 +78,7 @@
                         subsequent K-Means clustering analysis, as well as bootstrap support values for all samples in
                         the input dataset.
                     </p>
-                    <p>
-                        This project is work in progress, but a first version is already available on
-                        <a href=https://github.com/tschuelia/Pandora target="_blank">GitHub</a>
-                    </p>
-                    <p>The preprint publication describing Pandora in detail will be available soon.</p>
-                    <span class="badge bg-light text-dark">Python</span>
-                    <span class="badge bg-light text-dark">Eigensoft</span>
-                    <span class="badge bg-light text-dark">Plotly</span>
-                    <span class="badge bg-light text-dark">Pandas</span>
-                    <span class="badge bg-light text-dark">Scikit-Learn</span>
+                    <p>The tool is unit-tested and I set up CI using GitHub actions.</p>
                 </div>
             </div>
         </div>
@@ -91,6 +97,17 @@
                  data-bs-parent="#ProjectsAccordion"
                  id="collapseProjectsSimulation">
                 <div class="accordion-body">
+                    <p>We provide empirical evidence that current state-of-the-art models of sequence evolution cannot
+                        reproduce
+                        empirical-like evolutionary data.</p>
+                    <p>The publication is available as <a
+                            href="https://doi.org/10.1101/2023.07.11.548509"
+                            target="_blank">preprint in BioRxiv</a>.</p>
+                    <span class="badge bg-light text-dark">Python</span>
+                    <span class="badge bg-light text-dark">Pandas</span>
+                    <span class="badge bg-light text-dark">Scikit-Learn</span>
+                    <span class="badge bg-light text-dark">LightGBM</span>
+                    <hr>
                     <p>
                         Simulating sequence evolution plays an important role in the development and evaluation of
                         phylogenetic inference tools. Naturally, the simulated data needs to be as realistic as possible
@@ -111,13 +128,6 @@
                     <p>This work is a joint work with my colleagues at HITS and a team of researchers in Lyon. Johanna
                         Trost, Dimitri Höhler, and I contributed all equally to this work.
                     </p>
-                    <p>The respective publication is available as<a
-                            href="https://doi.org/10.1101/2023.07.11.548509"
-                            target="_blank">at preprint</a>.</p>
-                    <span class="badge bg-light text-dark">Python</span>
-                    <span class="badge bg-light text-dark">Pandas</span>
-                    <span class="badge bg-light text-dark">Scikit-Learn</span>
-                    <span class="badge bg-light text-dark">LightGBM</span>
                 </div>
             </div>
         </div>
@@ -137,6 +147,23 @@
                  id="collapseProjectsOne">
                 <div class="accordion-body">
                     <p>
+                        I implemented a Python library for predicting the difficulty of multiple sequence alignments in
+                        phylogenetics.
+                    </p>
+                    <p>PyPythia is available on <a href="https://github.com/tschuelia/PyPythia">GitHub</a>.</p>
+                    <p>The peer-reviewed publication is available <a
+                            href="https://doi.org/10.1093/molbev/msac254"
+                            target="_blank">in Molecular Biology and Evolution</a>.</p>
+                    <span class="badge bg-light text-dark">Python</span>
+                    <span class="badge bg-light text-dark">Pandas</span>
+                    <span class="badge bg-light text-dark">Scikit-Learn</span>
+                    <span class="badge bg-light text-dark">LightGBM</span>
+                    <span class="badge bg-light text-dark">TreeLite</span>
+                    <span class="badge bg-light text-dark">Snakemake</span>
+                    <span class="badge bg-light text-dark">RAxML-NG</span>
+                    <span class="badge bg-light text-dark">GitHub Actions</span>
+                    <hr>
+                    <p>
                         Phylogenetic analyses under the Maximum Likelihood model are time and resource intensive.
                         To adequately capture the vastness of tree space, one needs to infer multiple independent trees.
                         On some datasets, multiple tree inferences converge to similar tree topologies, on others to
@@ -147,6 +174,8 @@
                         Pythia, a Random Forest Regressor that accurately predicts this difficulty. Pythia predicts the
                         degree of
                         difficulty of analyzing a dataset prior to initiating Maximum Likelihood based tree inferences.
+                        The prediction and computation of all required attributes is substantially faster than a single
+                        Maximum Likelihood tree inference.
                         Pythia can be used to increase user awareness with respect to the amount of signal and
                         uncertainty to be
                         expected in phylogenetic analyses, and hence inform an appropriate (post-)analysis setup.
@@ -156,27 +185,14 @@
                     <p>In the current version of Pythia we replaced the Random Forest Regressor with boosted trees
                         implemented in
                         LightGBM.</p>
-                    <p>Pythia is available as open source software libraries in C and Python.</p>
-                    <p>
-                        PyPythia is a light-weight stand-alone Python library that includes an easy-to-use command line
-                        interface.
-                        PyPythia is available on <a href="https://github.com/tschuelia/PyPythia">GitHub</a>.
-                    </p>
+                    <p>PyPythia is unit-tested and I set up CI using GitHub Actions.</p>
+                    <p>Pythia is available as open source software libraries in C (CPythia) and Python (PyPythia).</p>
                     <p>
                         CPythia is also available on <a href="https://github.com/tschuelia/CPythia">GitHub</a>.
                         CPythia can only be used in conjunction with <a
                             href="https://codeberg.org/Exelixis-Lab/coraxlib">Coraxlib</a>.
                     </p>
-                    <p>The respective publication is available <a
-                            href="https://doi.org/10.1093/molbev/msac254"
-                            target="_blank">at MBE</a>.</p>
-                    <span class="badge bg-light text-dark">Python</span>
-                    <span class="badge bg-light text-dark">Pandas</span>
-                    <span class="badge bg-light text-dark">Scikit-Learn</span>
-                    <span class="badge bg-light text-dark">LightGBM</span>
-                    <span class="badge bg-light text-dark">TreeLite</span>
-                    <span class="badge bg-light text-dark">Snakemake</span>
-                    <span class="badge bg-light text-dark">RAxML-NG</span>
+
                 </div>
             </div>
         </div>
@@ -196,6 +212,19 @@
                  data-bs-parent="#ProjectsAccordion"
                  id="collapseProjectsSeven">
                 <div class="accordion-body">
+                    <p>I performed large scale numerical analysis of the influence of threshold parameters on the
+                        runtime and
+                        results of Maximum Likelihood phylogenetic inferences.</p>
+                    <p>The peer-reviewed publication is available <a
+                            href="https://doi.org/10.1093/bioadv/vbad124"
+                            target="_blank">in Bioinformatics Advances</a>.</p>
+                    <span class="badge bg-light text-dark">Python</span>
+                    <span class="badge bg-light text-dark">Snakemake</span>
+                    <span class="badge bg-light text-dark">Plotly</span>
+                    <span class="badge bg-light text-dark">RAxML-NG</span>
+                    <span class="badge bg-light text-dark">IQ-Tree</span>
+                    <span class="badge bg-light text-dark">FastTree</span>
+                    <hr>
                     <p>
                         Maximum Likelihood (ML) is a widely used phylogenetic inference model. ML implementations
                         heavily rely on numerical optimization routines that use internal numerical thresholds to
@@ -215,19 +244,10 @@
                         10 in IQ-TREE results in an average tree inference speedup of 1.3 ± 0.4 on Data collection 1 and
                         1.3 ± 0.9 on Data collection 2.
                     </p>
-                    <p>We summarized our main findings in a peer-reviewed publication that is available in <a
-                            href="https://doi.org/10.1093/bioadv/vbad124"
-                            target="_blank">Bioinformatics Advances</a>.</p>
                     <p>Our research comprises four studies, I conducted Study 1 during my Master's thesis with the CME
                         group at HITS.
                         You can find the full thesis <a
                                 href="https://cme.h-its.org/exelixis/pubs/masterJulia.pdf">here</a></p>.
-                    <span class="badge bg-light text-dark">Python</span>
-                    <span class="badge bg-light text-dark">Snakemake</span>
-                    <span class="badge bg-light text-dark">Plotly</span>
-                    <span class="badge bg-light text-dark">RAxML-NG</span>
-                    <span class="badge bg-light text-dark">IQ-Tree</span>
-                    <span class="badge bg-light text-dark">FastTree</span>
                 </div>
             </div>
         </div>
@@ -246,21 +266,23 @@
                  data-bs-parent="#ProjectsAccordion"
                  id="collapseProjectsTwo">
                 <div class="accordion-body">
-                    <p>
-                        To remember vacations, holidays and trips I implemented a diary website.
-                        This website also stores images associated with certain trips and image descriptions so I can
-                        show
-                        the best images to
-                        friends and family. It also includes a map so I can see where
-                        on this beautiful earth I have already travelled to.
-                    </p>
+                    <p>I implemented a private web-based diary to keep track of vacations.</p>
                     <p>The source code is available <a href="https://github.com/tschuelia/diary"
-                                                       target="_blank">here</a>.</p>
+                                                       target="_blank">on GitHub</a>.</p>
                     <span class="badge bg-light text-dark">Python</span>
                     <span class="badge bg-light text-dark">Django</span>
                     <span class="badge bg-light text-dark">HTML</span>
                     <span class="badge bg-light text-dark">CSS</span>
                     <span class="badge bg-light text-dark">Bootstrap</span>
+                    <hr>
+                    <p>
+                        To remember vacations, holidays and trips I implemented a diary website using the django web
+                        framework.
+                        This website also stores images associated with certain trips and image descriptions, so I can
+                        show the best images to friends and family. It also includes a map, so I can see where
+                        on this beautiful earth I have already travelled to ☺︎
+                        In its latest version, I can also upload files, e.g. GPS tracks of hikes.
+                    </p>
                 </div>
             </div>
         </div>
@@ -279,19 +301,25 @@
                  data-bs-parent="#ProjectsAccordion"
                  id="collapseProjectsThree">
                 <div class="accordion-body">
-                    <p>
-                        For my master’s studies at KIT I implemented a web-based tool to organize the courses I
-                        intend to take. The tool checks if the planned courses satisfy all requirements to get the
-                        master’s
-                        degree.
-                    </p>
+                    <p>I implemented a web-based tool to organize courses for the computer science master's degree at
+                        KIT.</p>
                     <p>The source code is available <a href="https://github.com/tschuelia/master-organization"
-                                                       target="_blank">here</a>.</p>
+                                                       target="_blank">on GitHub</a>.</p>
                     <span class="badge bg-light text-dark">Python</span>
                     <span class="badge bg-light text-dark">Django</span>
                     <span class="badge bg-light text-dark">HTML</span>
                     <span class="badge bg-light text-dark">CSS</span>
                     <span class="badge bg-light text-dark">Bootstrap</span>
+                    <hr>
+                    <p>
+                        For my master’s studies at KIT I implemented a web-based tool to organize the courses I
+                        intend to take. The tool checks if the planned courses satisfy all requirements to get the
+                        master’s degree. It further shows a schedule of exam dates, as well as an overview of all
+                        grades.
+                        Since the computation of the final grade at KIT is a bit tedious, I also implemented an
+                        automatic
+                        computation of the final grade, as well as the average grades per module.
+                    </p>
                 </div>
             </div>
         </div>
@@ -310,24 +338,27 @@
                  data-bs-parent="#ProjectsAccordion"
                  id="collapseProjectsFour">
                 <div class="accordion-body">
-                    <p>
-                        With the Intelligent Process Automation and Robotics Lab (IPR) at KIT, we implemented a system
-                        for
-                        markerless patient movement tracking during cochlear implant surgeries. The approach uses only
-                        the
-                        images obtained by the microscopic camera used by the surgeon.
-                        I implemented the algorithm using Python 3.6 and the image processing frameworks OpenCV and
-                        scikit-image. It also includes a neural network for semantic image segmentation. The source code
-                        is
-                        available <a href="https://github.com/tschuelia/Image-Based-Tracking" target="_blank">on my
-                        GitHub</a>.
-                        We published the results and further experimental evaluations, the paper is available <a
-                            href="https://doi.org/10.3389/fsurg.2021.742160">here</a>.
-                        The thesis is available upon request (contains sensitive patient images).
-                    </p>
+                    <p>I implemented a markerless patient movement tracking algorithm for cochlear implant
+                        surgeries.</p>
+                    <p>The source code is available <a href="https://github.com/tschuelia/Image-Based-Tracking"
+                                                       target="_blank">on GitHub</a>.</p>
+                    <p>The peer-reviewed paper is available <a href="https://doi.org/10.3389/fsurg.2021.742160">Frontiers
+                        in Surgery</a>.</p>
                     <span class="badge bg-light text-dark">Python</span>
                     <span class="badge bg-light text-dark">OpenCV</span>
                     <span class="badge bg-light text-dark">scikit-image</span>
+                    <hr>
+                    <p>
+                        As my bachelor's thesis, at the Intelligent Process Automation and Robotics Lab (IPR) at KIT, I
+                        implemented a system
+                        for markerless patient movement tracking during cochlear implant surgeries. The approach uses
+                        only
+                        the images obtained by the microscopic camera used by the surgeon.
+                        I implemented the algorithm using Python and the image processing frameworks OpenCV and
+                        scikit-image. It also includes a neural network for semantic image segmentation.
+
+                        My bachelor's thesis is available upon request only as it contains sensitive patient images.
+                    </p>
                 </div>
             </div>
         </div>
@@ -346,6 +377,15 @@
                  data-bs-parent="#ProjectsAccordion"
                  id="collapseProjectsFive">
                 <div class="accordion-body">
+                    <p>I implemented a website for storing and sharing recipes.</p>
+                    <p>The source code is available <a href="https://github.com/tschuelia/cake_recipe_website"
+                                                       target="_blank">on GitHub</a>.</p>
+                    <span class="badge bg-light text-dark">Python</span>
+                    <span class="badge bg-light text-dark">Django</span>
+                    <span class="badge bg-light text-dark">HTML</span>
+                    <span class="badge bg-light text-dark">CSS</span>
+                    <span class="badge bg-light text-dark">Bootstrap</span>
+                    <hr>
                     <p>This project was inspired by my love for baking. It is meant for storing all the ideas and
                         recipes
                         of me and my friends. Different users can create new recipes, categorize them or search for a
@@ -355,13 +395,7 @@
                     <p>This website is an ongoing project and I keep adding new features. The latest feature I added
                         was a shopping list that is especially useful when planning to bake multiple different
                         recipes.</p>
-                    <p>The source code is available <a href="https://github.com/tschuelia/cake_recipe_website"
-                                                       target="_blank">here</a>.</p>
-                    <span class="badge bg-light text-dark">Python</span>
-                    <span class="badge bg-light text-dark">Django</span>
-                    <span class="badge bg-light text-dark">HTML</span>
-                    <span class="badge bg-light text-dark">CSS</span>
-                    <span class="badge bg-light text-dark">Bootstrap</span>
+
                 </div>
             </div>
         </div>
@@ -380,6 +414,15 @@
                  data-bs-parent="#ProjectsAccordion"
                  id="collapseProjectsSix">
                 <div class="accordion-body">
+                    <p>We implemented a web-based Lambda Calculus IDE and interpreter for the programming paradigm
+                        lecture at KIT.</p>
+                    <p>The source code is available <a href="https://github.com/wavelength-ide/wavelength-ide"
+                                                       target="_blank">here</a>.</p>
+                    <span class="badge bg-light text-dark">Java</span>
+                    <span class="badge bg-light text-dark">Google Web Toolkit</span>
+                    <span class="badge bg-light text-dark">JavaScript</span>
+                    <span class="badge bg-light text-dark">CSS</span>
+                    <hr>
                     <p>As part of the undergraduate studies, we implemented a browser-based lambda calculus IDE and
                         interpreter in a team of six students. We used Java with the Google Web Toolkit, JavaScript and
                         CSS
@@ -389,12 +432,6 @@
                         steps.
                         Also, I wrote lots of tests for the controller layer (MVC architecture).
                     </p>
-                    <p>The source code is available <a href="https://github.com/wavelength-ide/wavelength-ide"
-                                                       target="_blank">here</a>.</p>
-                    <span class="badge bg-light text-dark">Java</span>
-                    <span class="badge bg-light text-dark">Google Web Toolkit</span>
-                    <span class="badge bg-light text-dark">JavaScript</span>
-                    <span class="badge bg-light text-dark">CSS</span>
                 </div>
             </div>
         </div>
