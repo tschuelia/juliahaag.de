@@ -26,12 +26,15 @@ def cv_homepage():
 @app.route("/monitoring", methods=["GET", "POST"])
 def monitor_clusters():
     if request.method == "POST":
-        data = request.get_json()
-        cluster = data["cluster"]
-        info = data["info"]
-        time = data["time"]
-        clusters[cluster] = (info, time)
-        return json.dumps({'success': True}), 200, {'ContentType': 'application/json'}
+        try:
+            data = request.get_json()
+            cluster = data["cluster"]
+            info = data["info"]
+            time = data["time"]
+            clusters[cluster] = (info, time)
+            return json.dumps({'success': True}), 200, {'ContentType': 'application/json'}
+        except:
+            return render_template('monitoring.html', clusters=clusters)
 
     else:
         return render_template('monitoring.html', clusters=clusters)
