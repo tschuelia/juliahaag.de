@@ -14,6 +14,7 @@ clusters = {
     "amy": ("No data", ""),
     "fry": ("No data", ""),
     "mlserver": ("No data", ""),
+    "jonas": ("No data", ""),
 }
 
 
