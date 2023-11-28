@@ -29,6 +29,8 @@ def monitor_clusters():
         try:
             data = request.get_json()
             cluster = data["cluster"]
+            if cluster not in clusters:
+                return render_template('monitoring.html', clusters=clusters)
             info = data["info"]
             time = data["time"]
             clusters[cluster] = (info, time)
