@@ -1,0 +1,26 @@
+{
+  "pandora": {
+    "title": "Pandora: A Tool to Estimate Dimensionality Reduction Stability of Genotype Data",
+    "authors": ["J. Haag", "A. I. Jordan", "A. Stamatakis"],
+    "journal": "bioRxiv",
+    "date": "08-2024",
+    "doi": "https://doi.org/10.1101/2024.03.14.584962",
+    "notes": ""
+  },
+  "EBG": {
+    "title": "Predicting Phylogenetic Bootstrap Values via Machine Learning",
+    "authors": ["J. Wiegert", "D. Höhler", "J. Haag", "A. Stamatakis"],
+    "journal": "bioRxiv",
+    "date": "03-2024",
+    "doi": "https://doi.org/10.1101/2024.03.04.583288",
+    "notes": ""
+  },
+  "performance-assessment": {
+    "title": "A representative Performance Assessment of Maximum Likelihood based Phylogenetic Inference Tools",
+    "authors": [ "D. Höhler", "J. Haag", "A. M. Kozlov", "A. Stamatakis"],
+    "journal": "bioRxiv",
+    "date": "11-2022",
+    "doi": "https://doi.org/10.1101/2022.10.31.514545",
+    "notes": ""
+  }
+}

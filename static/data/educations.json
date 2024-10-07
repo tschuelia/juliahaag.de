@@ -1,0 +1,44 @@
+{
+  "phd": {
+    "title": "PhD Computer Science (ongoing)",
+    "location": "Heidelberg Institute for Theoretical Studies",
+    "start": "03-2022",
+    "description": [
+      "Research focus on data analysis and machine learning applications in phylogenetics.",
+      "For more details on what I am working on in my PhD, have a look at the <a href=\"#experience\">Experience</a>, the <a href=\"#publications\">Publications and Preprints</a>, or the <a href=\"#projects\">Projects</a> section."
+    ]
+  },
+  "msc": {
+    "title": "MSc Computer Science",
+    "location": "Karlsruhe Institute of Technology",
+    "start": "10-2019",
+    "end": "02-2022",
+    "description": [
+      "Master's Thesis: \"Empirical Numerical Properties of Maximum Likelihood Phylogenetic Inference\" (Mark: 1.0)",
+      "Specialization subjects: Data-Intensive Computing, Machine Learning and Artificial Intelligence",
+      "Minor subject: Biology",
+      "Final mark: 1.1 (graduation with distinction)"
+    ]
+  },
+  "bsc": {
+    "title": "BSc Computer Science",
+    "location": "Karlsruhe Institute of Technology",
+    "start": "10-2015",
+    "end": "09-2019",
+    "description": [
+      "Bachelor's Thesis: \"Patient Tracking in Surgery: An Image-Guided, Markerless Approach\" (Mark: 1.0)",
+      "Minor subject: Physics",
+        "Final mark: 1.9"
+    ]
+  },
+  "abitur": {
+    "title": "Abitur (A-Levels)",
+    "location": "Robert-Gerwig-Gymnasium Hausach",
+    "start": "09-2006",
+    "end": "07-2015",
+    "description": [
+      "General qualification for university entrance",
+      "Final mark: 1.3"
+    ]
+  }
+}

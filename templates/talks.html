@@ -1,52 +1,29 @@
-<section class="section publications-section" id="talks">
-    <h2 class="section-title"><span class="icon-holder"><i class="fas fa-chalkboard-teacher"></i></span>Talks
+<section class="section publications-section"
+         id="talks"
+>
+    <h2 class="section-title">
+        <span class="icon-holder">
+            <i class="fas fa-chalkboard-teacher"></i></span>
+        Talks
     </h2>
-    <div class="item">
-        <h6 class="container-block-title">Educated Bootstrap Guesser: Predicting Phylogenetic Bootstrap Values</h6>
+    {% for talk_id, talk in talks.items() %}
+        <div class="item" id={{talk_id}}>
+        <h6 class="container-block-title">
+            {{ talk.title }}
+        </h6>
         <p>
-            legend2024<br>
-            May 2024
+            <i>{{ talk.conference }} ({{ talk.location }}, {{talk.date.strftime('%B %Y')}})</i>
             <br>
-            In this presentation, I presented the work of my master's student Julius.<br>
-            A recording of this talk is available <a href="https://www.youtube.com/watch?v=56iUJ_t-AUA" target="_blank">on YouTube</a>.<br>
-            <a href="{{ url_for('static', filename='data/Legend2024_Bootstrap.pdf') }}" target="_blank">Talk slides</a>
+            {% if talk.description %}
+                {{talk.description}}<br>
+            {% endif %}
+            {% if talk.recording %}
+                <span><a href={{talk.recording}} target="_blank"><i class="fab fa-youtube"></i> Recording</a><br></span>
+            {% endif %}
+            {% if talk.slides %}
+                <span><a href="{{ url_for('static', filename=talk.slides) }}" target="_blank"><i class="fas fa-file-pdf"></i> Talk slides</a></span>
+            {% endif %}
         </p>
-    </div><!--//item-->
-    <div class="item">
-        <h6 class="container-block-title">Simulations of Sequence Evolution: How (Un)realistic They Are and Why</h6>
-        <p>
-            legend2024<br>
-            May 2024
-            <br>
-            A recording of this talk is available <a href="https://www.youtube.com/watch?v=yQsFROcqDgs" target="_blank">on YouTube</a>.<br>
-            <a href="{{ url_for('static', filename='data/Legend2024_Simulation.pdf') }}" target="_blank">Talk slides</a>
-        </p>
-    </div><!--//item-->
-    <div class="item">
-        <h6 class="container-block-title">Predicting the Difficulty of Phylogenetic Analyses</h6>
-        <p>
-            ERGA BioGenome Analysis and Applications Seminar<br>
-            November 2023
-            <br>
-            A recording of this talk is available <a href="https://youtu.be/xyS6SR8uiGQ?t=1195" target="_blank">on YouTube</a>.<br>
-            <a href="{{ url_for('static', filename='data/pythia_erga_nov_2023.pdf') }}" target="_blank">Talk slides</a>
-        </p>
-    </div><!--//item-->
-    <div class="item">
-        <h6 class="container-block-title">Predicting the Difficulty of Phylogenetic Analyses</h6>
-        <p>
-            Peder Sather/Invertomics Symposium “Progress and Development in Phylogenetic Methods”<br>
-            March 2023, University of Oslo, Norway
-            <br>
-            <a href="{{ url_for('static', filename='data/pythia_oslo_2023.pdf') }}" target="_blank">Talk slides</a>
-        </p>
-    </div><!--//item-->
-    <div class="item">
-        <h6 class="container-block-title">Predicting the Difficulty of a Phylogenetic Analysis</h6>
-        <p>
-            EVOLCYP Workshop on Biodiversity Genomics<br>
-            September 2022, University of Cyprus, Cyprus
-        </p>
-    </div><!--//item-->
-
-</section><!--//section-->
+    </div>
+    {% endfor %}
+</section>

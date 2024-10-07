@@ -1,0 +1,52 @@
+{
+  "simulations": {
+    "title": "Simulations of Sequence Evolution: How (Un)realistic They Are and Why",
+    "authors": ["J. Trost*", "J. Haag*", "D. Höhler*", "L. Jacob", "A. Stamatakis", "B. Boussau"],
+    "journal": "Molecular Biology and Evolution",
+    "volume": "41",
+    "issue": "1",
+    "date": "01-2024",
+    "doi": "https://doi.org/10.1093/molbev/msad277",
+    "notes": "* equal contribution"
+  },
+  "adaptive-raxmlng": {
+    "title": "Adaptive RAxML-NG: Accelerating Phylogenetic Inference under Maximum Likelihood using dataset difficulty",
+    "authors": [ "A. Togkousidis", "A. M. Kozlov", "J. Haag", "D. Höhler", "A. Stamatakis"],
+    "journal": "Molecular Biology and Evolution",
+    "volume": "40",
+    "issue": "10",
+    "date": "10-2023",
+    "doi": "https://doi.org/10.1093/molbev/msad227",
+    "notes": ""
+  },
+  "freeLunch": {
+    "title": "The Free Lunch is not over yet – Systematic Exploration of Numerical Thresholds in Maximum Likelihood Phylogenetic Inference",
+    "authors": ["J. Haag", "L. Hübner", "A. M. Kozlov", "A. Stamatakis"],
+    "journal": "Bioinformatics Advances",
+    "volume": "3",
+    "issue": "1",
+    "date": "09-2023",
+    "doi": "https://doi.org/10.1093/bioadv/vbad124",
+    "notes": ""
+  },
+  "pythia": {
+    "title": "From Easy to Hopeless - Predicting the Difficulty of Phylogenetic Analyses",
+    "authors": ["J. Haag", "D. Höhler", "B. Bettisworth", "A. Stamatakis"],
+    "journal": "Molecular Biology and Evolution",
+    "volume": "39",
+    "issue": "12",
+    "date": "12-2022",
+    "doi": "https://doi.org/10.1093/molbev/msac254",
+    "notes": ""
+  },
+  "markerless-tracking": {
+    "title": "Continuous Feature-Based Tracking of the Inner Ear for Robot-Assisted Microsurgery",
+    "authors": ["C. Marzi", "T. Prinzen", "J. Haag", "T. Klenzner", "F. Mathis-Ullrich"],
+    "journal": "Front. Surg.",
+    "volume": "8",
+    "issue": "742160",
+    "date": "11-2021",
+    "doi": "https://doi.org/10.3389/fsurg.2021.742160",
+    "notes": ""
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "prob_stats_for_ML_DS": {
+    "title": "Probability & Statistics for Machine Learning & Data Science",
+    "company": "DeepLearning.AI",
+    "date": "01-2024",
+    "description": [
+      "Coursera course teaching the most important concepts of probability and statistics for Machine Learning and Data Science.",
+      "You can verify the certificate <a href=\"https://coursera.org/verify/ZK7XPDS46JYA\" target=\"_blank\">here</a>."
+    ]
+  },
+  "mathForML": {
+    "title": "Mathematics for Machine Learning",
+    "company": "Imperial College London",
+    "date": "11-2023",
+    "description": [
+      "Coursera course teaching the most important mathematical concepts for Machine Learning. The specialization consists of the following courses:",
+      " <ul><li>Linear Algebra</li><li>Multivariate Calculus</li><li>PCA</li></ul>",
+      "You can verify the certificate <a href=\"https://coursera.org/verify/specialization/AUG3H6MTVQBL\" target=\"_blank\">here</a>."
+    ]
+  },
+  "statsCourse": {
+    "title": "Introduction to Statistics",
+    "company": "Stanford University",
+    "date": "11-2023",
+    "description": [
+      "Coursera course teaching the basics of statistics and hypothesis testing.",
+      "You can verify the certificate <a href=\"https://coursera.org/verify/ULLKBAVAHAUN\" target=\"_blank\">here</a>."
+    ]
+  },
+  "medical_ai": {
+    "title": "AI for Medical Diagnosis",
+    "company": "DeepLearning.AI",
+    "date": "09-2020",
+    "description": [
+      "Coursera course teaching the basics of medical diagnosis prediction using machine learning and deep learning.",
+      "You can verify the certificate <a href=\"https://coursera.org/verify/CH7KS9N8YEYN\" target=\"_blank\">here</a>."
+    ]
+  },
+  "deep_learning_specialization": {
+    "title": "Deep Learning Specialization",
+    "company": "DeepLearning.AI",
+    "date": "07-2020",
+    "description": [
+      "Coursera specialization consisting of the following courses:",
+      "<ul><li>Convolutional Neural Networks</li><li>Sequence Models</li><li>Structuring Machine Learning Projects</li><li>Regularization and Optimization</li></ul>",
+      "You can verify the certificate <a href=\"https://coursera.org/verify/specialization/CBR895FZ73B2\" target=\"_blank\">here</a>"
+    ]
+  }
+}

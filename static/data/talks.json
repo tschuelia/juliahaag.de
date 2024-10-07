@@ -1,0 +1,40 @@
+{
+  "EBG_legend2024": {
+    "title": "Educated Bootstrap Guesser: Predicting Phylogenetic Bootstrap Values",
+    "conference": "legend2024",
+    "location": "FORTH Heraklion, Crete",
+    "date": "05-2024",
+    "description": "In this presentation, I presented the work of my master's student Julius",
+    "recording": "https://www.youtube.com/watch?v=56iUJ_t-AUA",
+    "slides": "data/Legend2024_Bootstrap.pdf"
+  },
+  "Simulations_legend2024" : {
+    "title": "Simulations of Sequence Evolution: How (Un)realistic They Are and Why",
+    "conference": "legend2024",
+    "location": "FORTH Heraklion, Crete",
+    "date": "05-2024",
+    "recording": "https://www.youtube.com/watch?v=yQsFROcqDgs",
+    "slides": "data/Legend2024_Simulation.pdf"
+  },
+  "Pythia_ERGA": {
+    "title": "Predicting the Difficulty of Phylogenetic Analyses",
+    "conference": "ERGA BioGenome Analysis and Applications Seminar",
+    "location": "Online Seminar",
+    "date": "11-2023",
+    "recording": "https://youtu.be/xyS6SR8uiGQ?t=1195",
+    "slides": "data/pythia_erga_nov_2023.pdf"
+  },
+  "Pythia_Oslo" : {
+    "title": "Predicting the Difficulty of Phylogenetic Analyses",
+    "conference": "Peder Sather/Invertomics Symposium “Progress and Development in Phylogenetic Methods”",
+    "location": "University of Oslo, Norway",
+    "date": "03-2023",
+    "slides": "data/pythia_oslo_2023.pdf"
+  },
+  "Pythia_Cyprus": {
+    "title": "Predicting the Difficulty of a Phylogenetic Analysis",
+    "conference": "EVOLCYP Workshop on Biodiversity Genomics",
+    "location": "University of Cyprus, Cyprus",
+    "date": "09-2022"
+  }
+}

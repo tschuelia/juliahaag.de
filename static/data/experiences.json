@@ -1,0 +1,175 @@
+{
+  "phd": {
+    "title": "PhD Computer Science (ongoing)",
+    "company": "Heidelberg Institute for Theoretical Studies",
+    "start": "03-2022",
+    "summary": "PhD in Computer Science in the interdisciplinary field of computational biology.",
+    "description": [
+      "I am currently pursuing my PhD in Computer Science at the HITS in Heidelberg in the field of Bioinformatics. The working title of my thesis is \"Applications of Machine Learning and Data Science in Phylogenetics\". One main aim of Phylogenetics, and a research focus in my group at HITS is to infer phylogenetic trees. Phylogenetic trees represent hypothetical evolutionary relationships between organisms or species. With advances in machine learning and deep learning over the last decades, deep learning and large scale data analytics is becoming more popular in phylogenetics.",
+      "The goal of my thesis is to explore potential applications of machine learning and deep learning techniques to improve phylogenetic inferences, both in terms of accuracy and runtime. Furthermore, I am trying to improve current techniques and explore future directions by analyzing vast amounts of biological data, and research results.",
+      "The following list is a brief summary of what I am working on in my day-to-day work and projects that I have finished.",
+      "<ul><li>Pandora: Quantification of the uncertainty of population genetics genotype datasets under dimensionality reduction. See <a href=\"#PandoraProject\">below</a> for more details on this project. </li> <li>Debunking Simulations: In a joint work with researchers in France, we demonstrated that current state-of-the-art models of sequence evolution in phylogenetics cannot simulate empirical-like data. See <a href=\"#SimulationsProject\">below</a> for more details on this project. </li> <li>Pythia: Predicting the difficulty of phylogenetic analysis. See <a href=\"#PythiaProject\">below</a> for more details on this project. </li> <li>Numerical Analysis of thresholds in phylogenetic inference tools. See <a href=\"#NumericalAnalysis\">below</a> for more details on this project. </li> <li>My group develops a C library providing frequently used phylogenetic inference functionality (<a href=\"https://codeberg.org/Exelixis-Lab/coraxlib\">Coraxlib</a>). I am currently working on setting up a CI pipeline in Jenkins for this project. </li></ul>"
+    ],
+    "skills": [
+      "Machine Learning",
+      "Bioinformatics",
+      "Python",
+      "Pandas",
+      "numpy",
+      "Plotly",
+      "scikit-learn",
+      "LightGBM",
+      "Optuna",
+      "Snakemake",
+      "Biopython",
+      "C/C++",
+      "Git",
+      "GitHub Actions",
+      "Jenkins",
+      "RAxML-NG",
+      "IQ-TREE",
+      "FastTree"
+    ]
+  },
+  "apple-internship": {
+    "title": "AIML-Internship, Data Centric Machine Learning",
+    "company": "Apple",
+    "start": "06-2024",
+    "end": "09-2024",
+    "summary": "Internship with one of Apple's MLPT teams.",
+    "description": [
+      "To be updated :-)",
+      "I'm very happy to share that I am joining Apple for an AIML-Internship this summer!"
+    ],
+    "skills": [
+      "Python",
+      "TypeScript",
+      "React",
+      "TODO :-)"
+    ]
+  },
+  "Freelance2023": {
+    "title": "Freelance Software Engineer",
+    "company": "Freelance",
+    "start": "10-2021",
+    "end": "03-2024",
+    "summary": "Major refactoring and migration of a business-critical Python 2 codebase to Python 3.",
+    "description": [
+      "In addition to pursuing my PhD in computer science, I worked as a part-time freelance software engineer. The idea was to gain further experience in the industry with frameworks and technologies I don't use in my research.",
+      "The primary task involved refactoring and migrating a business-critical, yet undocumented and untested Python 2 codebase to Python 3. The original developers are unavailable, and there's no specification for the expected functionality. The challenge lies in refactoring without tests to validate changes, and to write tests, the codebase must first be understood and refactored. The initial structure, with scattered database interaction logic, didn't allow for testing. Potential logical bugs present another issue, as it's unclear if they're actual bugs or undocumented, intended behavior. I made substantial progress in refactoring, adding unit tests and documentation, reducing technical debt, and enhancing maintainability. I further identified potential bugs, data inconsistencies, and opportunities for speedup and complexity reduction.",
+      "In various side-projects for the same company, I came in touch with a few additional technologies, including FastAPI, GraphQL, docker, docker-compose and Apache Kafka."
+    ],
+    "skills": [
+      "Python",
+      "MySQL",
+      "Redis",
+      "FastAPI",
+      "GraphQL",
+      "Docker",
+      "docker-compose",
+      "Apache Kafka"
+    ]
+  },
+  "working_student_HITS": {
+    "title": " Working Student and Master's Thesis Data Analytics",
+    "company": "Heidelberg Institute for Theoretical Studies",
+    "start": "12-2020",
+    "end": "02-2022",
+    "summary": "Large scale analysis of numerical properties of phylogenetic inference using the maximum likelihood method.",
+    "description": [
+      "For more information, see the <a href=\"#NumericalAnalysis\">Project section below</a>."
+    ],
+    "skills": [
+      "Python",
+      "Snakemake",
+      "Pandas",
+      "Plotly",
+      "SQLite"
+    ]
+  },
+  "Freelance2020": {
+    "title": "Freelance Web Developer",
+    "company": "Freelance",
+    "start": "04-2020",
+    "end": "05-2020",
+    "summary": "Development of a web-based filesharing tool.",
+    "description": [
+      "I developed a web-based filesharing tool for a company organizing large events.",
+      "The web app allows file-upload and file-sharing, including support for share-links to grant access to certain files for non-registered users. All files are stored in an AWS S3 bucked to ensure scalability.",
+      "The project was developed using the Django web framework, and the frontend was implemented using HTML, CSS, and JavaScript."
+    ],
+    "skills": [
+      "Python",
+      "Django",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "AWS S3"
+    ]
+  },
+  "artiminds": {
+    "title": "Working Student Web Development and Data Analytics",
+    "company": "ArtiMinds Robotics GmbH",
+    "start": "10-2019",
+    "end": "03-2020",
+    "summary": "Development of a web-based analytics software suite for large-scale robotics data.",
+    "description": [
+      "ArtiMind's main product is a robot programming suite (RPS) for industrial robots. Instead of writing code, users of the RPS formulate the task of the robot using pre-programmed building blocks. The RPS continuously monitors the task execution while recording measurements such as velocity and force. This data can be directly transferred to the second key product of ArtiMinds: the LAR (Learning & Analytics for Robots). The LAR is a web-based monitoring interface that displays the recorded measurements and task executions of the robot.",
+      "During my work as a working student, I was part of the LAR development team. This work included writing tests for the previously largely untested LAR frontend and backend codebase.",
+      "I further analyzed velocity and force data of an industrial robot for customers to identify errors and optimization potential."
+    ],
+    "skills": [
+      "JavaScript",
+      "Typescript",
+      "HTML",
+      "CSS",
+      "MariaDB",
+      "Python",
+      "Pandas",
+      "Matplotlib"
+    ]
+  },
+  "walk_in": {
+    "title": "Fitness Trainer",
+    "company": "Walk In Fitness (KIT University Gym)",
+    "start": "08-2017",
+    "end": "10-2019",
+    "description": [
+      "As a balance to sitting in the library doing some programming and studying, I wanted to do something other than computer science. So I decided to do an internship and later work in the unversity gym. I helped clients achieve their fitness goals and did some basic nutrition counselling."
+    ]
+  },
+  "dt_tutor": {
+    "title": "Tutor for the subject \"Digital Technology and Design Methods\"",
+    "company": "Chair for Embedded Systems, KIT",
+    "start": "04-2018",
+    "end": "07-2018",
+    "description": [
+      "Tutor for the subject “Digitaltechnik und Entwurfsverfahren“ (Digital Technology and Design Methods).",
+      "Study aid for 28 undergraduate computer science students."
+    ]
+  },
+  "iar": {
+    "title": "Working Student Robotics",
+    "company": "Institute for Anthropomatics and Robotics, KIT",
+    "start": "01-2017",
+    "end": "09-2017",
+    "description": [
+      "Working with the ArmarX robot programming framework.",
+      "Preparation of experiments for marker-based human motion capture."
+    ]
+  },
+  "gpi": {
+    "title": "Working Student Geophysics",
+    "company": "Geophysical Institute, KIT",
+    "start": "03-2016",
+    "end": "09-2016",
+    "summary": "Writing lectures notes for the lecture \"Introduction to Geophysics\"",
+    "description": [
+      "I wrote lecture notes for the lecture \"Introduction to Geophysics\". The notes are used by the students as a study aid for the exam.",
+      "The resulting notes comprise 70 pages, including 50 custom-made graphics and are available on <a class=\"inline_link\" href=\"https://github.com/tschuelia/Geophysik-Skript/blob/master/GeoSkript.pdf\" target=\"_blank\">GitHub</a>."
+    ],
+    "skills": [
+      "LaTeX"
+    ]
+  }
+}

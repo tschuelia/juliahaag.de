@@ -2,99 +2,47 @@
     <h2 class="section-title"><span class="icon-holder"><i class="fas fa-book"></i></span>Publications & Preprints
     </h2>
     <h3 class="section-title">Publications</h3>
-        <!--  Simulations  -->
-    <div class="item" id="simulations">
-        <h6 class="container-block-title"><a
-                href=" https://doi.org/10.1093/molbev/msad277"
-                target="_blank">Simulations of Sequence Evolution: How (Un)realistic They Are and Why</a></h6>
+    {% for publication_id, publication in publications.items() %}
+        <div class="item" id={{ publication_id }}>
+        <h6 class="container-block-title"><a href={{ publication.doi }} target="_blank">{{ publication.title }}</a></h6>
         <p>
-            J. Trost*, <b>J. Haag*</b>, D. Höhler*, L. Jacob, A. Stamatakis and B. Boussau (2024)
-            Simulations of Sequence Evolution: How (Un)realistic They Are and Why.
-            <i>Molecular Biology and Evolution</i>. https://doi.org/10.1093/molbev/msad277
-            <br>* equal contribution
+            {% set authors_list = [] %}
+            {% for author in publication.authors %}
+                {% if "J. Haag" in author %}
+                    {% set author = "<b>" + author + "</b>" %}
+                {% endif %}
+                {% set _ = authors_list.append(author) %}
+            {% endfor %}
+            {{ authors_list | join(', ') | safe }}
+            ({{ publication.date.year }})
+            {{ publication.title }}.
+            <i>{{ publication.journal }}</i>, {{ publication.volume }}{% if publication.issue %}({{ publication.issue }}){% endif %}.
+            <a href={{ publication.doi }} target="_blank">{{ publication.doi }}</a>
+            {% if publication.notes %}<br>{{publication.notes}}{%endif%}
         </p>
     </div><!--//item-->
-    <!--  Adaptive RAxML-NG  -->
-    <div class="item" id="adaptive-raxmlng">
-        <h6 class="container-block-title"><a
-                href="https://doi.org/10.1093/molbev/msad227"
-                target="_blank">Adaptive RAxML-NG: Accelerating Phylogenetic Inference under Maximum Likelihood using
-            dataset difficulty</a></h6>
-        <p>
-            A. Togkousidis, A.M. Kozlov, <b>J. Haag</b>, D. Höhler and A. Stamatakis (2023) Adaptive RAxML-NG:
-            Accelerating Phylogenetic Inference under Maximum Likelihood using dataset difficulty. <i>Molecular Biology
-            and Evolution</i>. https://doi.org/10.1093/molbev/msad227
-        </p>
-    </div><!--//item-->
-    <!--  Free Lunch Lh-epsilon  -->
-    <div class="item" id="freeLunch">
-        <h6 class="container-block-title"><a
-                href="https://doi.org/10.1093/bioadv/vbad124"
-                target="_blank">The Free Lunch is not over yet – Systematic Exploration of Numerical Thresholds in
-            Maximum Likelihood Phylogenetic Inference</a></h6>
-        <p>
-            <b>J. Haag</b>, L. Hübner, A.M. Kozlov and A. Stamatakis (2023) The Free Lunch is not over yet – Systematic
-            Exploration of Numerical Thresholds in Maximum Likelihood Phylogenetic Inference. <i>Bioinformatics
-            Advances</i>, 3(1). https://doi.org/10.1093/bioadv/vbad124
-        </p>
-    </div><!--//item-->
-    <!--  Pythia  -->
-    <div class="item" id="pythia">
-        <h6 class="container-block-title"><a
-                href="https://doi.org/10.1093/molbev/msac254"
-                target="_blank">From Easy to Hopeless - Predicting the Difficulty of Phylogenetic Analyses</a></h6>
-        <p>
-            <b>J. Haag</b>, D. Höhler, B. Bettisworth and A. Stamatakis (2022) From Easy to Hopeless - Predicting the
-            Difficulty of Phylogenetic Analyses. <i>Molecular Biology and Evolution</i>, 39(12).
-            https://doi.org/10.1093/molbev/msac254
-        </p>
-    </div><!--//item-->
-    <!--  BA Cochlea Markerless Tracking  -->
-    <div class="item">
-        <h6 class="container-block-title"><a
-                href="https://doi.org/10.3389/fsurg.2021.742160"
-                target="_blank">Continuous Feature-Based Tracking of the Inner Ear for Robot-Assisted
-            Microsurgery</a></h6>
-        <p>
-            C. Marzi, T. Prinzen, <b>J. Haag</b>, T. Klenzner and F. Mathis-Ullrich (2021) Continuous Feature-Based
-            Tracking
-            of
-            the Inner Ear for Robot-Assisted Microsurgery. <i>Front. Surg.</i>, 8:742160.
-            https://doi.org/10.3389/fsurg.2021.742160
-        </p>
-    </div><!--//item-->
+    {% endfor %}
+
     <!--    PREPRINTS -->
     <h3 class="section-title">Preprints</h3>
-    <!--  Pandora  -->
-    <div class="item">
-        <h6 class="container-block-title"><a
-                href="https://doi.org/10.1101/2024.03.14.584962"
-                target="_blank">Pandora: A Tool to Estimate Dimensionality Reduction Stability of Genotype Data</a></h6>
+    {% for preprint_id, preprint in preprints.items() %}
+        <div class="item" id={{ preprint_id }}>
+        <h6 class="container-block-title"><a href={{ preprint.doi }} target="_blank">{{ preprint.title }}</a></h6>
         <p>
-            <b>J. Haag</b>, A. I. Jordan and A. Stamatakis (2024) Pandora: A Tool to Estimate Dimensionality Reduction Stability of Genotype Data. <i>bioRxiv</i>.
-            https://doi.org/10.1101/2024.03.14.584962
+            {% set authors_list = [] %}
+            {% for author in preprint.authors %}
+                {% if "J. Haag" in author %}
+                    {% set author = "<b>" + author + "</b>" %}
+                {% endif %}
+                {% set _ = authors_list.append(author) %}
+            {% endfor %}
+            {{ authors_list | join(', ') | safe }}
+            ({{ preprint.date.year }})
+            {{ preprint.title }}.
+            <i>{{ preprint.journal }}</i>.
+            <a href={{ preprint.doi }} target="_blank">{{ preprint.doi }}</a>
+            {% if preprint.notes %}<br>{{preprint.notes}}{%endif%}
         </p>
     </div><!--//item-->
-     <!--  Bootstrap Prediction  -->
-    <div class="item">
-        <h6 class="container-block-title"><a
-                href="https://doi.org/10.1101/2024.03.04.583288"
-                target="_blank">Predicting Phylogenetic Bootstrap Values via Machine Learning</a></h6>
-        <p>
-            J. Wiegert, D. Höhler, <b>J. Haag</b>, Alexandros Stamatakis (2024) Predicting Phylogenetic Bootstrap Values via Machine Learning. <i>bioRxiv</i>.
-            https://doi.org/10.1101/2024.03.04.583288
-        </p>
-    </div><!--//item-->
-    <!--  ML performance assessment  -->
-    <div class="item">
-        <h6 class="container-block-title"><a
-                href="https://doi.org/10.1101/2022.10.31.514545"
-                target="_blank">A representative Performance Assessment of Maximum Likelihood based Phylogenetic
-            Inference Tools (Preprint)</a></h6>
-        <p>
-            D. Höhler, <b>J. Haag</b>, A. M. Kozlov and A. Stamatakis (2022) A representative Performance Assessment of
-            Maximum Likelihood based Phylogenetic Inference Tools. <i>bioRxiv</i>.
-            https://doi.org/10.1101/2022.10.31.514545
-        </p>
-    </div><!--//item-->
+    {% endfor %}
 </section><!--//section-->

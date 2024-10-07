@@ -1,0 +1,186 @@
+{
+  "open_source": {
+    "title": "Open Source Contributions (ongoing)",
+    "summary": "I contribute and update conda-forge recipes.",
+    "skills": [
+      "conda-forge"
+    ],
+    "description": [
+      "In my day-to-day work I rely on a lot of open-source software, and I think it's important to contribute to open-source projects myself. So far my contributions mainly concern conda-forge recipes. Namely, I contributed the following:",
+      "<ul><li>addition of the PyPythia feedstock (maintainer)</li><li>addition of the apricot-select feedstock (maintainer)</li><li>update the pomegranate feedstock (maintainer)</li><li>update the scikit-allel feedstock (maintainer)</li><li>update the r-curl feedstock</li></ul>",
+      "Additionally, all my software projects are available open-source on GitHub."
+    ]
+  },
+  "PandoraProject": {
+    "title": "Pandora: A Tool to Estimate Dimensionality Reduction Stability of Genotype Data",
+    "summary": "Pandora is a tool to estimate the uncertainty or stability of dimensionality reduction methods applied to genotype data in population genetics.",
+    "publication": {
+      "doi": "https://doi.org/10.1101/2024.03.14.584962",
+      "peerReviewed": false,
+      "journal": "bioRxiv"
+    },
+    "repository": "https://github.com/tschuelia/Pandora",
+    "skills": [
+      "Python",
+      "Eigensoft",
+      "Plotly",
+      "Pandas",
+      "Scikit-Learn",
+      "GitHub Actions"
+    ],
+    "description": [
+      "Genotype datasets typically contain a large number of single nucleotide polymorphisms for a comparatively small number of individuals. To identify similarities between individuals and to infer an individual’s origin or membership to a cultural group, dimensionality reduction techniques are routinely deployed. However, inherent (technical) difficulties such as missing or noisy data need to be accounted for when analyzing a lower dimensional representation of genotype data, and the intrinsic uncertainty of such analyses should be reported in all studies. However, to date, there exists no stability assessment technique for genotype data that can estimate this uncertainty.",
+      "To address this issue, I developed Pandora, a stability estimation framework for genotype data based on bootstrapping. Pandora computes an overall score to quantify the stability of the entire embedding, infers per-individual support values, and also deploys a k-means clustering approach to assess the uncertainty of assignments to potential cultural groups. In addition to this bootstrap-based stability estimation, Pandora offers a sliding-window stability estimation for whole-genome data. In the respective publication, I demonstrate the usage and utility of Pandora for studies that rely on dimensionality reduction techniques using published empirical and simulated datasets.",
+      "Pandora is implemented in Python3, unit-tested an I setup a CI pipeline in GitHub Actions."
+    ]
+  },
+  "SimulationsProject": {
+    "title": "Simulations of Sequence Evolution: how (un)realistic they really are and why.",
+    "summary": "In a joint work with researchers in France, we demonstrated that current state-of-the-art models of sequence evolution in phylogenetics cannot simulate empirical-like data.",
+    "skills": [
+      "Python",
+      "Pandas",
+      "Scikit-Learn",
+      "LightGBM",
+      "Optuna",
+      "Plotly"
+    ],
+    "publication": {
+      "doi": "https://doi.org/10.1093/molbev/msad277",
+      "peerReviewed": true,
+      "journal": "Molecular Biology and Evolution"
+    },
+    "description": [
+      "Simulating multiple sequence alignments (MSAs) using probabilistic models of sequence evolution plays an important role in the evaluation of phylogenetic inference tools and is crucial to the development of novel learning-based approaches for phylogenetic reconstruction, for instance, neural networks. These models and the resulting simulated data need to be as realistic as possible to be indicative of the performance of the developed tools on empirical data and to ensure that neural networks trained on simulations perform well on empirical data. Over the years, numerous models of evolution have been published with the goal to represent as faithfully as possible the sequence evolution process and thus simulate empirical-like data. In this study, we simulated DNA and protein MSAs under increasingly complex models of evolution with and without insertion/deletion (indel) events using a state-of-the-art sequence simulator. We assessed their realism by quantifying how accurately supervised learning methods are able to predict whether a given MSA is simulated or empirical.",
+      "Our results show that we can distinguish between empirical and simulated MSAs with high accuracy using two distinct and independently developed classification approaches across all tested models of sequence evolution. Our findings suggest that the current state-of-the-art models fail to accurately replicate several aspects of empirical MSAs, including site-wise rates as well as amino acid and nucleotide composition.",
+      "This work is a joint work with my colleagues at HITS and a team of researchers in Lyon. Johanna Trost, Dimitri Höhler, and I contributed all equally to this work."
+    ]
+  },
+  "PythiaProject": {
+    "title": "Pythia – Predicting the Difficulty of Phylogenetic Analyses",
+    "summary": "Pythia is a machine learning model that predicts the difficulty of phylogenetic inferences on a dataset based on its multiple sequence alignment.",
+    "skills": [
+      "Python",
+      "Pandas",
+      "Scikit-Learn",
+      "LightGBM",
+      "TreeLite",
+      "Snakemake",
+      "RAxML-NG",
+      "GitHub Actions"
+    ],
+    "repository": "https://github.com/tschuelia/PyPythia",
+    "publication": {
+      "doi": "https://doi.org/10.1093/molbev/msac254",
+      "peerReviewed": true,
+      "journal": "Molecular Biology and Evolution"
+    },
+    "description": [
+      "Phylogenetic analyses under the Maximum-Likelihood (ML) model are time and resource intensive. To adequately capture the vastness of tree space, one needs to infer multiple independent trees. On some datasets, multiple tree inferences converge to similar tree topologies, on others to multiple, topologically highly distinct yet statistically indistinguishable topologies. At present, no method exists to quantify and predict this behavior. We introduce a method to quantify the degree of difficulty for analyzing a dataset and present Pythia, a Random Forest Regressor that accurately predicts this difficulty. Pythia predicts the degree of difficulty of analyzing a dataset prior to initiating ML-based tree inferences. Pythia can be used to increase user awareness with respect to the amount of signal and uncertainty to be expected in phylogenetic analyzes, and hence inform an appropriate (post-)analysis setup. Further, it can be used to select appropriate search algorithms for easy-, intermediate-, and hard-to-analyze datasets.",
+      "In the current version of Pythia we replaced the Random Forest Regressor with boosted trees implemented in LightGBM and retrained the predictor on approximately 10k MSAs, including DNA, AA, and morphological datasets.",
+      "For convenient usage, we provide the command line interface <i>PyPythia</i> that is build around Pythia. PyPythia is implemented in Python, it is unit-tested and I set up CI using GitHub Actions. PyPythia is available on <a href=\"https://github.com/tschuelia/PyPythia\">GitHub</a>.",
+      "Additionally, <i>CPythia</i> wraps Pythia in a C library as plugin for the <a href=\"https://codeberg.org/Exelixis-Lab/coraxlib\" target=\"_blank\">Coraxlib</a> project. This integration is a crucial part in our group's latest version of RAxML-NG, <a href=\"https://doi.org/10.1093/molbev/msad227\", target=\"_blank\">adaptive RAxML-NG</a>."
+    ]
+  },
+  "NumericalAnalysis": {
+    "title": "Empirical Numerical Properties of Maximum Likelihood Phylogenetic Inference",
+    "summary": "I performed large scale numerical analysis of the influence of threshold parameters on the runtime and results of Maximum Likelihood phylogenetic inferences.",
+    "skills": [
+      "Python",
+      "Snakemake",
+      "Plotly",
+      "RAxML-NG",
+      "IQ-Tree",
+      "FastTree"
+    ],
+    "publication": {
+      "doi": "https://doi.org/10.1093/bioadv/vbad124",
+      "peerReviewed": true,
+      "journal": "Bioinformatics Advances"
+    },
+    "description": [
+      "Maximum Likelihood (ML) is a widely used phylogenetic inference model. ML implementations heavily rely on numerical optimization routines that use internal numerical thresholds to determine convergence. We systematically analyze the impact of these threshold settings on the log-likelihood and runtimes for ML tree inferences with RAxML-NG, IQ-TREE, and FastTree on empirical datasets. We provide empirical evidence that we can substantially accelerate tree inferences with RAxML-NG and IQ-TREE by changing the default values of two such numerical thresholds. At the same time, altering these settings does not significantly impact the quality of the inferred trees. We further show that increasing both thresholds accelerates the RAxML-NG bootstrap without influencing the resulting support values. For RAxML-NG, increasing the likelihood thresholds ϵ<sub>LnL</sub> and ϵ<sub>brlen</sub> to 10 and 10<sup>3</sup> respectively results in an average tree inference speedup of 1.9 ± 0.6 on Data collection 1, 1.8 ± 1.1 on Data collection 2, and 1.9 ± 0.8 on Data collection 2 for the RAxML-NG bootstrap. Increasing the likelihood threshold ϵ<sub>LnL</sub> to 10 in IQ-TREE results in an average tree inference speedup of 1.3 ± 0.4 on Data collection 1 and 1.3 ± 0.9 on Data collection 2.",
+      "Our research comprises four studies, I conducted Study 1 during my Master's thesis with the CME group at HITS. You can find the full thesis <a href=\"https://cme.h-its.org/exelixis/pubs/masterJulia.pdf\">here</a>"
+    ]
+  },
+  "diary-website": {
+    "title": "Diary Website",
+    "summary": "I implemented a private, web-based diary to write down memories and store images of vacations and other cool activities.",
+    "repository": "https://github.com/tschuelia/diary",
+    "skills": [
+      "Python",
+      "Django",
+      "HTML",
+      "CSS",
+      "Bootstrap"
+    ],
+    "description": [
+      "To remember vacations, holidays and trips I implemented a diary website using the django web framework. This website also stores images associated with certain trips and image descriptions, so I can show the best images to friends and family. It also includes a map, so I can see where on this beautiful earth I have already travelled to ☺ In its latest version, I can also upload files, e.g. GPS tracks of hikes."
+    ]
+  },
+  "master-orga": {
+    "title": "Master Courses Organization Tool",
+    "summary": "I implemented a web-based tool to organize courses for the computer science master's degree at KIT.",
+    "skills": [
+      "Python",
+      "Django",
+      "HTML",
+      "CSS",
+      "Bootstrap"
+    ],
+    "repository": "https://github.com/tschuelia/master-organization",
+    "description": [
+      "For my master’s studies at KIT I implemented a web-based tool to organize the courses I intend to take. The tool checks if the planned courses satisfy all requirements to get the master’s degree. It further shows a schedule of exam dates, as well as an overview of all grades. Since the computation of the final grade at KIT is a bit tedious, I also implemented an automatic computation of the final grade, as well as the average grades per module."
+    ]
+  },
+  "ba-patient-tracking": {
+    "title": "Markerless Patient Tracking (Bachelor’s Thesis)",
+    "summary": "I developed and implemented a markerless patient movement tracking algorithm for cochlear implant surgeries.",
+    "repository": "https://github.com/tschuelia/Image-Based-Tracking",
+    "publication": {
+      "doi": "https://doi.org/10.3389/fsurg.2021.742160",
+      "peerReviewed": true,
+        "journal": "Frontiers in Surgery."
+    },
+    "skills": [
+      "Python",
+        "OpenCV",
+        "scikit-image"
+    ],
+    "description": [
+      "As my bachelor's thesis, at the Intelligent Process Automation and Robotics Lab (IPR) at KIT, I implemented a system for markerless patient movement tracking during cochlear implant surgeries. The approach uses only the images obtained by the microscopic camera used by the surgeon. I implemented the algorithm using Python and the image processing frameworks OpenCV and scikit-image. It also includes a neural network for semantic image segmentation.",
+      "My bachelor's thesis is available upon request only as it contains sensitive patient images."
+    ]
+  },
+  "recipe-website": {
+    "title": "Recipe Website",
+    "summary": "I implemented a web-based recipe website to store and share recipes with friends and family.",
+    "repository": "https://github.com/tschuelia/cake_recipe_website",
+    "skills": [
+      "Python",
+      "Django",
+      "HTML",
+      "CSS",
+      "Bootstrap"
+    ],
+    "description": [
+      "This project was inspired by my love for baking. It is meant for storing all the ideas and recipes of me and my friends. Different users can create new recipes, categorize them or search for a specific recipe. The website also includes functionality to filter recipes by ingredients and categories.",
+      "This website is an ongoing project and I keep adding new features. The latest features I added were a shopping list (which is especially useful when planning to bake multiple different recipes) and an idea collection where I can save interesting recipes or ideas I come up with."
+    ]
+  },
+  "wavelength": {
+    "title": "Wavelength Lambda Calculus IDE (study project)",
+    "summary": "We implemented a web-based Lambda Calculus IDE and interpreter for the programming paradigm lecture at KIT.",
+    "repository": "https://github.com/wavelength-ide/wavelength-id",
+    "skills": [
+      "Java",
+      "Google Web Toolkit",
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "description": [
+      "As part of the undergraduate studies, we implemented a browser-based lambda calculus IDE and interpreter in a team of six students. We used Java with the Google Web Toolkit, JavaScript and CSS and wrote about 10 000 lines of code plus 6000 lines of tests. The project was graded with mark 1.0 (best possible grade). I mostly implemented the interactive frontend to explore the lambda terms and their reduction steps. Also, I wrote lots of tests for the controller layer (MVC architecture)."
+    ]
+  }
+}
